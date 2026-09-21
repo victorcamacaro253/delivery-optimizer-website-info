@@ -1,0 +1,1884 @@
+{
+  "deliveryOptimizer": {
+    "es": {
+      "projectName": "Optimizador de Rutas",
+      "projectTagline": "IA para Última Milla",
+      "heroBadge": "Logística de Última Milla · Impulsada por IA",
+      "heroTitle": "Entregas del",
+      "heroTitleHighlight": "Futuro, Hoy",
+      "heroDescription": "Optimizador de última milla con flota eléctrica e IA híbrida. 5 ramas de inteligencia artificial trabajando juntas para reducir emisiones, costos y tiempos de entrega en Los Ángeles.",
+      "ctaPrimary": "Ver Rutas en Vivo",
+      "ctaSecondary": "Explorar el Motor IA",
+      "stat1Label": "On-Time Delivery",
+      "stat2Label": "Rutas en EVs",
+      "stat3Label": "Viajes con Batch Picking",
+      "heroStat1Value": "100%",
+      "heroStat1Label": "On-Time",
+      "heroStat1Sub": "Entregas puntuales",
+      "heroStat2Value": "92%",
+      "heroStat2Label": "Eléctrico",
+      "heroStat2Sub": "Flota sostenible",
+      "heroStat3Value": "-47%",
+      "heroStat3Label": "Viajes",
+      "heroStat3Sub": "Menos emisiones",
+      "heroCta1": "Ver Cómo Funciona",
+      "heroCta2": "Tecnología IA",
+      "heroDashTitle1": "Entregas Hoy",
+      "heroDashValue1": "1,247",
+      "heroDashTitle2": "CO₂ Evitado",
+      "heroDashValue2": "100kg",
+      "heroDashRouteTitle": "Ruta Optimizada #1",
+      "heroDashRouteSub": "24 entregas · 180km",
+      "heroDashRouteStatus": "En progreso",
+      "heroDashFleetTitle": "Flota Eléctrica",
+      "heroDashFleetSub": "43 vehículos activos",
+      "heroDashFleetStatus": "92%",
+      "heroDashStat1Value": "10",
+      "heroDashStat1Label": "Depósitos",
+      "heroDashStat2Value": "47",
+      "heroDashStat2Label": "Vehículos",
+      "heroDashStat3Value": "184",
+      "heroDashStat3Label": "Entregas/h",
+      "heroBadgePrime": "Prime Now",
+      "heroBadgeAI": "5 Modelos IA",
+      "hookTitle": "¿Alguna vez has esperado un paquete que \"llega hoy\" pero nunca llega?",
+      "hookSubtitle": "Detrás de cada entrega hay una orquesta logística compleja que debe resolver preguntas como:",
+      "hookQuestions": [
+        {
+          "question": "¿Qué vehículo debe llevar este paquete?",
+          "answer": "Nuestro sistema asigna automáticamente el vehículo ideal (eléctrico o combustión) según la distancia y la carga."
+        },
+        {
+          "question": "¿Cuál es la ruta más rápida considerando el tráfico?",
+          "answer": "Un modelo de Machine Learning predice el tráfico real y calcula la ruta óptima antes de que el conductor salga."
+        },
+        {
+          "question": "¿Qué pasa si el conductor se queda sin batería?",
+          "answer": "El algoritmo E-VRP nunca asigna una ruta que supere la autonomía del vehículo eléctrico (240 km)."
+        },
+        {
+          "question": "¿Cómo entregamos a tiempo si el cliente solo estará en casa entre las 2 y 4 PM?",
+          "answer": "OR-Tools respeta estrictamente las ventanas de tiempo, garantizando un 100% de On-Time Delivery."
+        },
+        {
+          "question": "¿Qué hacemos si una calle está cerrada por un accidente?",
+          "answer": "Nuestro agente de Q-Learning recalcula la ruta en segundos desde la posición actual del conductor."
+        },
+        {
+          "question": "¿Qué pasa si varios vecinos piden un paquete a la misma hora?",
+          "answer": "Nuestro algoritmo de Batch Picking agrupa automáticamente los pedidos compatibles en un solo viaje, reduciendo los viajes duplicados en un 47%."
+        }
+      ],
+      "hookConclusion": "Nuestro sistema responde todas estas preguntas automáticamente, usando inteligencia artificial híbrida para tomar decisiones que antes requerían horas de planificación humana.",
+      "problemsTitle": "El Problema de la Última Milla",
+      "problemsSubtitle": "La entrega final representa el 53% del costo logístico total. Nuestra IA lo reduce drásticamente.",
+      "problems": [
+        {
+          "icon": "AlertTriangle",
+          "title": "Rutas Estáticas",
+          "desc": "Los sistemas tradicionales no consideran tráfico en tiempo real, clima ni ventanas de entrega dinámicas."
+        },
+        {
+          "icon": "Battery",
+          "title": "Ansiedad de Autonomía",
+          "desc": "Los vehículos eléctricos se quedan sin batería porque las rutas no calculan el consumo real por tráfico y topografía."
+        },
+        {
+          "icon": "TrendingDown",
+          "title": "50% de Viajes Vacíos",
+          "desc": "Los camiones regresan vacíos al depósito, desperdiciando combustible, tiempo y generando emisiones innecesarias."
+        },
+        {
+          "icon": "Clock",
+          "title": "Entregas Fallidas",
+          "desc": "Sin priorización inteligente, los pedidos urgentes (Prime Now) compiten con los estándar, generando retrasos."
+        }
+      ],
+      "sevenProblemsTitle": "7 Problemas Reales que Resolvemos",
+      "sevenProblemsSubtitle": "Tecnología de punta traducida en resultados tangibles para la operación.",
+      "sevenProblemsBenefitTitle": "Beneficio",
+      "sevenProblems": [
+        {
+          "image": "images/problems/route-optimization.webp",
+          "color": "blue",
+          "title": "1. Rutas Ineficientes",
+          "desc": "Calcula la ruta perfecta considerando tráfico, clima y ventanas de tiempo estrictas.",
+          "benefit": "Conductores llegan más rápido, entregando más paquetes por viaje."
+        },
+        {
+          "image": "images/problems/autonomy.jpg",
+          "color": "green",
+          "title": "2. Ansiedad de Autonomía",
+          "desc": "Asigna rutas cortas a vehículos eléctricos y rutas largas a vehículos de combustión.",
+          "benefit": "92% de rutas completadas en EVs, ~100 kg de CO2 evitados por día."
+        },
+        {
+          "image": "images/problems/q-learning.webp",
+          "color": "orange",
+          "title": "3. Pedidos Urgentes",
+          "desc": "Un agente de Q-Learning decide en segundos si asignar, rechazar o esperar nuevos pedidos.",
+          "benefit": "Pedidos Prime Now priorizados automáticamente sin colapsar la operación."
+        },
+        {
+          "image": "images/problems/h3.webp",
+          "color": "cyan",
+          "title": "4. Cobertura Duplicada",
+          "desc": "Divide la ciudad en hexágonos perfectos (H3 de Uber) sin huecos ni superposiciones.",
+          "benefit": "Cada pedido se asigna al depósito correcto en milisegundos."
+        },
+        {
+          "image": "images/problems/batch-picking.webp",
+          "color": "purple",
+          "title": "5. Viajes Duplicados",
+          "desc": "Agrupa pedidos del mismo barrio con ventanas de tiempo compatibles (Batch Picking).",
+          "benefit": "47% menos vehículos en la calle, reduciendo congestión y costos."
+        },
+        {
+          "image": "images/problems/traffic-incident.webp",
+          "color": "red",
+          "title": "6. Imprevistos Viales",
+          "desc": "Detecta cierres de calles y recalcula la ruta óptima en segundos desde la posición actual.",
+          "benefit": "Los clientes no notan el retraso, el sistema se adapta a la realidad."
+        },
+        {
+          "image": "images/problems/sustainability.jpg",
+          "color": "emerald",
+          "title": "7. Falta de Métricas Sostenibles",
+          "desc": "Mide en tiempo real el CO2 evitado, el ahorro de combustible y el uso real de la flota eléctrica.",
+          "benefit": "Reportes reales y auditables para cumplir con el Climate Pledge de Amazon."
+        }
+      ],
+      "howItWorksTitle": "Cómo Funciona la Magia",
+      "howItWorksSubtitle": "Tres pasos simples que transforman el caos logístico en una operación predecible y sostenible.",
+      "howItWorks": [
+        {
+          "icon": "Brain",
+          "color": "blue",
+          "title": "1. Predice",
+          "desc": "El modelo Random Forest analiza hora, clima, tipo de vía y eventos especiales para predecir el tiempo de viaje real con un 93% de precisión."
+        },
+        {
+          "icon": "Cpu",
+          "color": "cyan",
+          "title": "2. Optimiza",
+          "desc": "OR-Tools calcula la ruta matemáticamente perfecta, agrupando pedidos cercanos y respetando estrictamente la autonomía de la flota eléctrica."
+        },
+        {
+          "icon": "GitBranch",
+          "color": "green",
+          "title": "3. Se Adapta",
+          "desc": "Cuando surge un imprevisto, el agente de Q-Learning reacciona en segundos, reasignando rutas sin romper la operación."
+        }
+      ],
+      "resultsTitle": "Resultados de la Simulación",
+      "resultsSubtitle": "KPIs extraídos directamente del log de ejecución con 10 depósitos de Amazon en Los Ángeles.",
+      "resultsKpis": [
+        {
+          "value": "100%",
+          "label": "On-Time Delivery",
+          "sub": "102/102 órdenes atendidas",
+          "icon": "CheckCircle2",
+          "color": "green"
+        },
+        {
+          "value": "90.9%",
+          "label": "Rutas Eléctricas",
+          "sub": "10 de 11 vehículos EV",
+          "icon": "Zap",
+          "color": "blue"
+        },
+        {
+          "value": "-47%",
+          "label": "Viajes con Batch Picking",
+          "sub": "De 102 a 55 viajes",
+          "icon": "TrendingDown",
+          "color": "orange"
+        },
+        {
+          "value": "103.5 kg",
+          "label": "CO₂ Evitados",
+          "sub": "Por simulación completa",
+          "icon": "Leaf",
+          "color": "cyan"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "value": "178,267",
+          "label": "Intersecciones (Nodos) en el grafo"
+        },
+        {
+          "value": "575 km",
+          "label": "Recorridos en vehículos eléctricos"
+        },
+        {
+          "value": "225",
+          "label": "Vehículos totales en la flota"
+        }
+      ],
+      "depotsTitle": "10 Depósitos de Amazon en Los Ángeles",
+      "depotsSubtitle": "Cada depósito tiene su propia flota heterogénea, capacidad máxima y zona de cobertura definida por hexágonos H3.",
+      "depots": [
+        {
+          "code": "DPS6",
+          "zone": "Simi Valley & Ventura County",
+          "orders": 10
+        },
+        {
+          "code": "DUR1",
+          "zone": "San Fernando Valley & Burbank",
+          "orders": 10
+        },
+        {
+          "code": "DLX9",
+          "zone": "West LA, Santa Monica & Culver City",
+          "orders": 8
+        },
+        {
+          "code": "DCX7",
+          "zone": "Long Beach, Torrance & South Bay",
+          "orders": 10
+        },
+        {
+          "code": "VAX3",
+          "zone": "Gardena, Compton & South LA",
+          "orders": 8,
+          "special": "Sub-Same Day"
+        },
+        {
+          "code": "DLX5",
+          "zone": "Central LA, Glendale & Northeast",
+          "orders": 12
+        },
+        {
+          "code": "DFX3",
+          "zone": "LAX, Westchester & South LA",
+          "orders": 14
+        },
+        {
+          "code": "DLX7",
+          "zone": "Cypress, Stanton & North OC",
+          "orders": 10
+        },
+        {
+          "code": "DPS1",
+          "zone": "Rosemead & San Gabriel Valley",
+          "orders": 9
+        },
+        {
+          "code": "DLA3",
+          "zone": "Commerce, East LA & Montebello",
+          "orders": 11
+        }
+      ],
+      "impactTitle": "¿Por Qué Esto Importa?",
+      "impactSubtitle": "La tecnología no es solo código. Es una herramienta que transforma la vida de todos los actores en la cadena logística.",
+      "impactSections": [
+        {
+          "icon": "Building",
+          "color": "blue",
+          "title": "Para las Empresas",
+          "items": [
+            "Reducción drástica de costos operativos.",
+            "Cumplimiento medible del Climate Pledge.",
+            "Escalabilidad sin caos operativo."
+          ]
+        },
+        {
+          "icon": "Truck",
+          "color": "cyan",
+          "title": "Para los Conductores",
+          "items": [
+            "Rutas claras, sin dar vueltas innecesarias.",
+            "Menos estrés con instrucciones precisas.",
+            "Seguridad de autonomía garantizada."
+          ]
+        },
+        {
+          "icon": "Package",
+          "color": "orange",
+          "title": "Para los Clientes",
+          "items": [
+            "Entregas 100% puntuales.",
+            "Menos congestión y ruido en su barrio.",
+            "Impacto ambiental positivo."
+          ]
+        },
+        {
+          "icon": "Leaf",
+          "color": "green",
+          "title": "Para la Ciudad",
+          "items": [
+            "47% menos viajes duplicados.",
+            "Menos contaminación por flota eléctrica.",
+            "Calles más seguras y predecibles."
+          ]
+        }
+      ],
+      "aiBadge": "Motor de IA Híbrida",
+      "aiTitle": "5 Ramas de IA, 1 Sistema",
+      "aiSubtitle": "Cada capa del motor resuelve un problema distinto. Juntas, logran lo que ninguna podría sola.",
+      "aiBranches": [
+        {
+          "icon": "Cpu",
+          "name": "OR-Tools",
+          "desc": "Optimización matemática E-VRP",
+          "color": "blue"
+        },
+        {
+          "icon": "Brain",
+          "name": "Random Forest",
+          "desc": "Predicción de tráfico (R² > 0.93)",
+          "color": "cyan"
+        },
+        {
+          "icon": "GitBranch",
+          "name": "Q-Learning",
+          "desc": "Despacho dinámico en tiempo real",
+          "color": "blue"
+        },
+        {
+          "icon": "MapPin",
+          "name": "Uber H3",
+          "desc": "Indexación hexagonal geoespacial",
+          "color": "cyan"
+        },
+        {
+          "icon": "Route",
+          "name": "NetworkX",
+          "desc": "Grafos de rutas reales de LA",
+          "color": "blue"
+        }
+      ],
+      "fleetTitle": "Flota Eléctrica Heterogénea",
+      "fleetSubtitle": "10 depósitos reales, 3 tipos de vehículos, 1 objetivo: cero emisiones.",
+      "vehicles": [
+        {
+          "name": "Rivian EDV 700",
+          "type": "100% Eléctrico",
+          "range": "240 km",
+          "capacity": "700 paquetes",
+          "icon": "⚡",
+          "color": "blue",
+          "image": "/images/flota/Rivian-Canada-Amazon.webp"
+        },
+        {
+          "name": "Ford Transit Custom",
+          "type": "Híbrido",
+          "range": "400 km",
+          "capacity": "300 paquetes",
+          "icon": "🔋",
+          "color": "cyan",
+          "image": "/images/flota/ford-transit.webp"
+        },
+        {
+          "name": "Amazon Flex (Gig)",
+          "type": "Combustión",
+          "range": "500 km",
+          "capacity": "50 paquetes",
+          "icon": "⛽",
+          "color": "orange",
+          "image": "/images/flota/amazon-flex.jpg"
+        }
+      ],
+      "visionBadge": "Nuestra Visión",
+      "visionTitle": "Transformando la logística de última milla mediante IA",
+      "visionDesc": "La última milla representa el 53% del costo logístico total. Este proyecto demuestra que es posible lograr un 100% On-Time Delivery con flota eléctrica, reduciendo viajes vacíos y evitando emisiones, mediante un enfoque de ingeniería integral.",
+      "visionGoals": [
+        "E-VRP con OR-Tools",
+        "Predicción ML (R² > 0.93)",
+        "Despacho RL en tiempo real",
+        "Indexación Geoespacial H3"
+      ],
+      "useCasesTitle": "Casos de Uso en el Mundo Real",
+      "useCasesSubtitle": "Cómo nuestro sistema resuelve desafíos logísticos complejos en tiempo real.",
+      "useCaseProblem": "Problema",
+      "useCaseSolution": "Solución IA",
+      "useCaseResult": "Resultado",
+      "useCaseScenario": "Escenarios Reales",
+      "useCases": [
+        {
+          "icon": "Calendar",
+          "color": "blue",
+          "title": "Temporada Alta (Black Friday)",
+          "scenario": "El volumen de pedidos se multiplica por 5 en un solo día.",
+          "solution": "El sistema agrupa automáticamente pedidos cercanos (Batch Picking) y distribuye la carga equitativamente entre los 10 depósitos.",
+          "result": "47% menos viajes, cero colapsos operativos."
+        },
+        {
+          "icon": "Zap",
+          "color": "orange",
+          "title": "Entrega de Emergencia (Prime Now)",
+          "scenario": "Un cliente necesita un medicamento urgente en menos de 2 horas.",
+          "solution": "El agente de Q-Learning detecta la prioridad y reasigna dinámicamente un vehículo Rivian cercano, saltándose la cola estándar.",
+          "result": "Entrega en 45 minutos, cliente 100% satisfecho."
+        },
+        {
+          "icon": "AlertTriangle",
+          "color": "red",
+          "title": "Cierre de Calle Inesperado",
+          "scenario": "Un accidente bloquea la autopista principal a las 8:00 AM.",
+          "solution": "El módulo de Live Rerouting detecta el incidente y recalcula la ruta óptima en segundos desde la posición actual del conductor.",
+          "result": "Ruta alternativa en 3 segundos, sin retrasos en la entrega."
+        },
+        {
+          "icon": "Leaf",
+          "color": "green",
+          "title": "Cumplimiento del Climate Pledge",
+          "scenario": "La empresa exige reducir la huella de carbono en un 30% este año.",
+          "solution": "El motor E-VRP asigna rutas cortas (<240 km) exclusivamente a la flota Rivian EDV, dejando las rutas largas para los Ford Transit.",
+          "result": "92% de rutas en EVs, 103.5 kg de CO2 evitados por simulación."
+        }
+      ],
+      "ctaTitle": "¿Listo para optimizar tus entregas?",
+      "ctaDescription": "Explora el código, la documentación técnica o prueba el simulador en vivo.",
+      "ctaGithub": "Ver en GitHub",
+      "ctaSimulator": "Probar Simulador",
+      "archTitle": "Arquitectura del Sistema",
+      "archSubtitle": "5 capas desacopladas, 5 inteligencias artificiales, 1 sistema unificado.",
+      "archBadge": "Ingeniería de Software",
+      "archLayersTitle": "Arquitectura Modular por Capas",
+      "archLayersSubtitle": "Separación estricta de responsabilidades: la lógica de negocio no conoce la UI, y la UI no modifica el estado.",
+      "archLayers": [
+        {
+          "number": "01",
+          "folder": "config/",
+          "name": "Configuración",
+          "desc": "Constantes globales: 10 depósitos reales de Amazon, flota heterogénea, capacidades y área de cobertura. Permite reconfigurar el sistema sin tocar la lógica.",
+          "icon": "Settings",
+          "color": "blue"
+        },
+        {
+          "number": "02",
+          "folder": "models/",
+          "name": "Modelos de Datos",
+          "desc": "Entidades puras (Order, Vehicle, VehicleType) sin dependencia de UI ni lógica. Garantiza la integridad y tipado de los datos en toda la aplicación.",
+          "icon": "Database",
+          "color": "cyan"
+        },
+        {
+          "number": "03",
+          "folder": "core/",
+          "name": "Core Algorítmico",
+          "desc": "Lógica de negocio pura: VRPOptimizer, TrafficMLModel, DynamicDispatcher, H3Zones, BatchPicker y LiveRerouter. El cerebro del sistema.",
+          "icon": "Cpu",
+          "color": "purple"
+        },
+        {
+          "number": "04",
+          "folder": "visualization/",
+          "name": "Visualización",
+          "desc": "Renderizado de mapas animados con Leaflet y Folium. Consume el estado de la simulación sin modificarlo, garantizando separación de responsabilidades.",
+          "icon": "Map",
+          "color": "green"
+        },
+        {
+          "number": "05",
+          "folder": "app.py",
+          "name": "Dashboard Interactivo",
+          "desc": "Capa de presentación en Streamlit con KPIs en tiempo real, gráficas de Plotly y mapa animado de rutas. El punto de contacto con el usuario.",
+          "icon": "LayoutDashboard",
+          "color": "orange"
+        }
+      ],
+      "archStackTitle": "Stack de Inteligencia Artificial Híbrida",
+      "archStackSubtitle": "Cada rama de IA resuelve un problema distinto. Juntas, logran lo que ninguna podría sola.",
+      "archStack": [
+        {
+          "name": "Optimización Matemática",
+          "tech": "OR-Tools (CP-SAT, Guided Local Search)",
+          "desc": "Resuelve el E-VRP con flota heterogénea, restricciones de batería (240 km Rivian) y ventanas de tiempo estrictas.",
+          "icon": "Calculator",
+          "color": "blue"
+        },
+        {
+          "name": "Machine Learning",
+          "tech": "Random Forest Regressor (Scikit-Learn)",
+          "desc": "Predice tiempos de tráfico reales basándose en hora, clima, tipo de vía y eventos especiales (R² > 0.93).",
+          "icon": "Brain",
+          "color": "cyan"
+        },
+        {
+          "name": "Reinforcement Learning",
+          "tech": "Q-Learning (Tabular)",
+          "desc": "Agente de despacho dinámico que decide en tiempo real: Asignar, Rechazar o Esperar pedidos entrantes.",
+          "icon": "GitBranch",
+          "color": "green"
+        },
+        {
+          "name": "Geospatial AI",
+          "tech": "H3 Hexagonal Indexing (Uber)",
+          "desc": "Divide Los Ángeles en hexágonos perfectos alrededor de cada depósito. Cobertura sin huecos ni superposiciones.",
+          "icon": "Hexagon",
+          "color": "purple"
+        },
+        {
+          "name": "Teoría de Grafos",
+          "tech": "NetworkX (Dijkstra, SCC)",
+          "desc": "Grafo real de calles de LA con 178,267 nodos y 513,884 aristas. Rutas que siguen calles reales, no líneas rectas.",
+          "icon": "Network",
+          "color": "orange"
+        }
+      ],
+      "futureTitle": "El Futuro de las Entregas",
+      "futureSubtitle": "Cómo Nuestro Sistema Transforma la Última Milla",
+      "futureIntro": "Cada día, millones de paquetes viajan desde centros de distribución hasta las puertas de nuestros hogares. Parece simple, pero detrás de cada entrega hay una orquesta logística compleja que debe resolver preguntas como:",
+      "problemSituation": "Situación Actual",
+      "problemSolution": "Nuestra Solución",
+      "problemBenefit": "Beneficio",
+      "futureIntroQuestions": [
+        {
+          "question": "¿Qué vehículo debe llevar este paquete?",
+          "answer": "Nuestro sistema asigna automáticamente el vehículo ideal (eléctrico o combustión) según la distancia y la carga."
+        },
+        {
+          "question": "¿Cuál es la ruta más rápida considerando el tráfico?",
+          "answer": "Un modelo de Machine Learning predice el tráfico real y calcula la ruta óptima antes de que el conductor salga."
+        },
+        {
+          "question": "¿Qué pasa si el conductor se queda sin batería?",
+          "answer": "El algoritmo E-VRP nunca asigna una ruta que supere la autonomía del vehículo eléctrico (240 km)."
+        },
+        {
+          "question": "¿Cómo entregamos a tiempo si el cliente solo estará en casa entre las 2 y 4 PM?",
+          "answer": "OR-Tools respeta estrictamente las ventanas de tiempo, garantizando un 100% de On-Time Delivery."
+        },
+        {
+          "question": "¿Qué hacemos si una calle está cerrada por un accidente?",
+          "answer": "Nuestro agente de Q-Learning recalcula la ruta en segundos desde la posición actual del conductor."
+        },
+        {
+          "question": "¿Qué pasa si varios vecinos piden un paquete a la misma hora?",
+          "answer": "Nuestro algoritmo de Batch Picking agrupa automáticamente los pedidos compatibles en un solo viaje, reduciendo los viajes duplicados en un 47%."
+        }
+      ],
+      "futureIntroConclusion": "Nuestro sistema responde todas estas preguntas automáticamente, usando inteligencia artificial para tomar decisiones que antes requerían horas de planificación humana.",
+      "futureProblemsTitle": "Los 7 Problemas Reales que Resolvemos",
+      "futureProblems": [
+        {
+          "icon": "Route",
+          "color": "blue",
+          "title": "1. El Problema de las Rutas Ineficientes",
+          "situation": "Los conductores siguen rutas planificadas manualmente o por sistemas básicos que no consideran el tráfico real, las ventanas de tiempo de los clientes ni la capacidad de los vehículos.",
+          "solution": "Calcula automáticamente la ruta perfecta para cada vehículo, considerando el tráfico de la hora del día, clima, eventos especiales, prioridades de pedidos y capacidad de carga.",
+          "benefit": "Los conductores llegan más rápido, entregan más paquetes por viaje, y los clientes reciben sus pedidos a tiempo."
+        },
+        {
+          "icon": "Battery",
+          "color": "green",
+          "title": "2. El Problema de los Vehículos Eléctricos",
+          "situation": "Las empresas están comprando vehículos eléctricos (como las Rivian de Amazon) para reducir emisiones, pero estos tienen una limitación crítica: la batería se agota y no pueden recargar a mitad del día.",
+          "solution": "Asigna automáticamente las rutas cortas a vehículos eléctricos y las rutas largas a vehículos de combustión. Nunca envía un vehículo eléctrico en un viaje que supere su autonomía.",
+          "benefit": "92% de las rutas son completadas por vehículos eléctricos, se evitan ~100 kg de CO2 por día y la empresa ahorra dinero en combustible."
+        },
+        {
+          "icon": "Zap",
+          "color": "orange",
+          "title": "3. El Problema de los Pedidos Urgentes",
+          "situation": "Cuando llega un pedido urgente (como Amazon Prime Now, que debe entregarse en 2 horas), los sistemas tradicionales no saben cómo reorganizar las rutas existentes para incluirlo.",
+          "solution": "Tiene un despachador inteligente que aprende de la experiencia. Cuando llega un pedido nuevo, decide en segundos si asignarlo a un vehículo en ruta, rechazarlo o esperar un vehículo más cercano.",
+          "benefit": "Los pedidos urgentes se priorizan automáticamente, mejorando la satisfacción del cliente sin desorganizar toda la operación."
+        },
+        {
+          "icon": "Hexagon",
+          "color": "cyan",
+          "title": "4. El Problema de las Zonas de Cobertura",
+          "situation": "Cuando una empresa tiene 10 depósitos en una ciudad, a veces dos depósitos cubren la misma zona (duplicando esfuerzos) o quedan calles sin cubrir (pedidos sin asignar).",
+          "solution": "Divide la ciudad en zonas hexagonales perfectas (como un panal de abeja), donde cada hexágono pertenece a un solo depósito. No hay huecos, no hay superposiciones.",
+          "benefit": "Cada pedido se asigna al depósito correcto instantáneamente, sin confusión y con carga de trabajo equitativa."
+        },
+        {
+          "icon": "Package",
+          "color": "purple",
+          "title": "5. El Problema de los Viajes Duplicados",
+          "situation": "Si 5 clientes en el mismo barrio piden paquetes a la misma hora, el sistema podría enviar 5 vehículos diferentes, cada uno haciendo el mismo trayecto.",
+          "solution": "Agrupa los pedidos que van al mismo barrio y tienen ventanas de tiempo compatibles. En lugar de 5 viajes, hace 1 solo viaje con 5 paquetes.",
+          "benefit": "47% menos viajes en la ciudad, menos congestión vehicular, menor costo operativo y menor huella de carbono."
+        },
+        {
+          "icon": "AlertTriangle",
+          "color": "red",
+          "title": "6. El Problema de los Imprevistos",
+          "situation": "Si una calle se cierra por un accidente o una obra, los conductores deben llamar a la base, esperar instrucciones, y perder tiempo valioso.",
+          "solution": "Detecta automáticamente qué vehículos están afectados por el cierre, identifica qué pedidos aún no se han entregado, y recalcula la ruta en segundos desde la posición actual del conductor.",
+          "benefit": "Los conductores no pierden tiempo esperando instrucciones, los clientes no notan el retraso y el sistema se adapta a la realidad cambiante de la ciudad."
+        },
+        {
+          "icon": "Leaf",
+          "color": "emerald",
+          "title": "7. El Problema de la Sostenibilidad",
+          "situation": "Las empresas logísticas saben que deben reducir emisiones, pero no tienen herramientas para medir el impacto real de sus decisiones operativas.",
+          "solution": "Calcula automáticamente cuántos kilogramos de CO2 se evitan al usar vehículos eléctricos, cuánto dinero se ahorra en combustible y qué porcentaje de la flota eléctrica se está utilizando realmente.",
+          "benefit": "La empresa puede reportar métricas reales de sostenibilidad a sus clientes, inversionistas y reguladores, alineándose con compromisos como el Climate Pledge de Amazon."
+        }
+      ],
+      "futureImpactTitle": "El Impacto en Números",
+      "futureImpactMetrics": [
+        {
+          "label": "Entregas a tiempo",
+          "value": "100%",
+          "desc": "de los pedidos llegan dentro de la ventana prometida"
+        },
+        {
+          "label": "Reducción de viajes",
+          "value": "47%",
+          "desc": "menos vehículos en la calle gracias a la consolidación"
+        },
+        {
+          "label": "Uso de flota eléctrica",
+          "value": "92%",
+          "desc": "de las rutas completadas por vehículos eléctricos"
+        },
+        {
+          "label": "CO2 evitado",
+          "value": "~100 kg",
+          "desc": "por día de operación"
+        },
+        {
+          "label": "Ahorro en combustible",
+          "value": "~$100",
+          "desc": "por día de operación"
+        },
+        {
+          "label": "Tiempo de respuesta",
+          "value": "<1 min",
+          "desc": "recálculo de rutas ante incidentes"
+        }
+      ],
+      "futureWhyTitle": "¿Por Qué Esto Importa?",
+      "futureWhySubtitle": "La tecnología no es solo código. Es una herramienta que transforma la vida de todos los actores en la cadena logística.",
+      "futureWhySections": [
+        {
+          "icon": "Building",
+          "color": "blue",
+          "title": "Para las Empresas",
+          "items": [
+            "Reducen costos operativos (menos combustible, menos vehículos, menos tiempo perdido)",
+            "Mejoran la satisfacción del cliente (entregas puntuales, incluso en condiciones adversas)",
+            "Cumplen metas de sostenibilidad (reducción medible de emisiones)",
+            "Escalar sin caos (el sistema maneja 100 pedidos igual de bien que 1,000)"
+          ]
+        },
+        {
+          "icon": "Truck",
+          "color": "cyan",
+          "title": "Para los Conductores",
+          "items": [
+            "Rutas claras y optimizadas (no pierden tiempo dando vueltas)",
+            "Menos estrés (el sistema les dice exactamente a dónde ir y en qué orden)",
+            "Vehículos adecuados (nunca se quedan sin batería a mitad del camino)"
+          ]
+        },
+        {
+          "icon": "Package",
+          "color": "orange",
+          "title": "Para los Clientes",
+          "items": [
+            "Entregas puntuales (reciben sus paquetes cuando prometieron)",
+            "Menos congestión (menos vehículos dando vueltas en su barrio)",
+            "Impacto ambiental positivo (su pedido llegó en un vehículo eléctrico)"
+          ]
+        },
+        {
+          "icon": "Leaf",
+          "color": "green",
+          "title": "Para la Ciudad",
+          "items": [
+            "Menos tráfico (47% menos viajes duplicados)",
+            "Menos contaminación (más vehículos eléctricos, menos emisiones)",
+            "Calles más seguras (conductores menos estresados y con rutas claras)"
+          ]
+        }
+      ],
+      "futureVisionTitle": "El Futuro que Estamos Construyendo",
+      "futureVisionText": "Este sistema no es solo una herramienta de optimización; es una plataforma de toma de decisiones que replica la inteligencia de los mejores gerentes logísticos del mundo, pero a escala y velocidad imposibles para un humano.",
+      "futureVisionImagining": "Imagina un mundo donde:",
+      "futureVisionPoints": [
+        "Cada paquete llega exactamente cuando prometieron",
+        "Los vehículos eléctricos son la norma, no la excepción",
+        "Las rutas se adaptan al tráfico en tiempo real",
+        "Los pedidos urgentes se priorizan sin desorganizar todo",
+        "Las empresas miden y reducen su huella de carbono automáticamente"
+      ],
+      "futureVisionConclusion": "Ese mundo ya existe en nuestra simulación. Y está listo para implementarse en la operación real de cualquier empresa de última milla.",
+      "futureCtaTitle": "¿Cómo Empezar?",
+      "futureCtaSubtitle": "Si tu empresa enfrenta desafíos de logística de última milla, este sistema puede:",
+      "futureCtaSteps": [
+        "Diagnosticar tus rutas actuales y identificar ineficiencias",
+        "Simular escenarios (¿qué pasa si agregamos 10 vehículos eléctricos? ¿Si abrimos un nuevo depósito?)",
+        "Optimizar tus operaciones diarias con rutas calculadas en minutos",
+        "Medir tu impacto ambiental y financiero en tiempo real"
+      ],
+      "futureCtaNote": "No necesitas ser un experto en tecnología. Nuestro dashboard interactivo muestra todo en gráficos claros, mapas animados y métricas fáciles de entender.",
+      "futureCtaButton1": "Ver Simulador en Vivo",
+      "futureCtaButton2": "Explorar Documentación Técnica",
+      "futureTagline": "Porque cada entrega cuenta. Cada kilómetro importa. Cada decisión tiene impacto.",
+      "futureTaglineSub": "Transformando la última milla, una ruta inteligente a la vez.",
+      "archDecisionsTitle": "Decisiones Técnicas Clave",
+      "archDecisionsSubtitle": "Cada decisión de arquitectura responde a un problema real del mundo logístico.",
+      "archDecisions": [
+        {
+          "title": "Híbrido OR-Tools + Q-Learning",
+          "desc": "OR-Tools calcula la ruta óptima inicial; Q-Learning maneja las excepciones en tiempo real (nuevos pedidos, cierres de calles).",
+          "icon": "Zap"
+        },
+        {
+          "title": "ML para Tráfico Real",
+          "desc": "Random Forest supera las tablas estáticas de tráfico. Predice tiempos reales considerando hora, clima y eventos especiales.",
+          "icon": "TrendingUp"
+        },
+        {
+          "title": "Grafo Fuertemente Conectado",
+          "desc": "Se garantiza que el grafo de LA tenga ruta de regreso desde cualquier punto. Sin esto, OR-Tools fallaría con 'no solution'.",
+          "icon": "Network"
+        },
+        {
+          "title": "Batch Picking con H3",
+          "desc": "Consolida pedidos del mismo hexágono con ventanas compatibles. Reduce viajes individuales en un 47%.",
+          "icon": "Package"
+        },
+        {
+          "title": "Re-enrutamiento en Vivo",
+          "desc": "Simula incidentes viales y recalcula rutas desde la posición actual del conductor en segundos.",
+          "icon": "AlertTriangle"
+        },
+        {
+          "title": "Flota Heterogénea Real",
+          "desc": "Rivian EDV (240 km), Ford Transit (400 km) y Amazon Flex. Cada uno con costos y capacidades diferenciados.",
+          "icon": "Truck"
+        }
+      ],
+      "archFlowTitle": "Flujo de Datos del Sistema",
+      "archFlowSubtitle": "Así viaja un pedido desde que el cliente hace clic hasta que llega a su puerta.",
+      "archFlow": [
+        {
+          "step": "1",
+          "title": "Pedido Recibido",
+          "desc": "Cliente realiza compra. Sistema recibe ubicación, peso y ventana de tiempo.",
+          "icon": "Package",
+          "color": "blue"
+        },
+        {
+          "step": "2",
+          "title": "Asignación H3",
+          "desc": "El hexágono determina a qué depósito pertenece el pedido en milisegundos.",
+          "icon": "Hexagon",
+          "color": "cyan"
+        },
+        {
+          "step": "3",
+          "title": "Predicción ML",
+          "desc": "Random Forest estima el tiempo real de viaje considerando tráfico y clima.",
+          "icon": "Brain",
+          "color": "purple"
+        },
+        {
+          "step": "4",
+          "title": "Batch Picking",
+          "desc": "Se agrupan pedidos cercanos con ventanas compatibles para reducir viajes.",
+          "icon": "Layers",
+          "color": "green"
+        },
+        {
+          "step": "5",
+          "title": "Optimización OR-Tools",
+          "desc": "Se calcula la ruta matemáticamente perfecta respetando batería y turnos.",
+          "icon": "Calculator",
+          "color": "orange"
+        },
+        {
+          "step": "6",
+          "title": "Despacho Q-Learning",
+          "desc": "El agente decide en tiempo real si asignar, rechazar o esperar el pedido.",
+          "icon": "GitBranch",
+          "color": "red"
+        },
+        {
+          "step": "7",
+          "title": "Entrega + Métricas",
+          "desc": "El conductor entrega. Se registran CO2 evitado, km eléctricos y On-Time.",
+          "icon": "CheckCircle2",
+          "color": "emerald"
+        }
+      ],
+      "archChallengesTitle": "Retos Técnicos Superados",
+      "archChallengesSubtitle": "Los problemas reales que enfrentamos durante el desarrollo y cómo los resolvimos.",
+      "challengeProblem": "Problema",
+      "challengeSolution": "Solución",
+      "challengeLesson": "Lección",
+      "archChallenges": [
+        {
+          "problem": "CP Solver Fail con Time Windows",
+          "solution": "Aumentar el horizonte de tiempo a 1440 min (24h) y agregar slack de 600 min para permitir esperas reales.",
+          "lesson": "El horizonte de la dimensión debe ser mayor que el máximo time window de cualquier orden."
+        },
+        {
+          "problem": "Índices de Grafo vs Matriz",
+          "solution": "Crear un mapeo node_to_matrix_idx que convierte IDs de OSMnx (ej: 21098552) a índices secuenciales.",
+          "lesson": "Los IDs de grafos nunca deben usarse como índices de arrays."
+        },
+        {
+          "problem": "Grafo No Fuertemente Conectado",
+          "solution": "Aplicar algoritmo de Strongly Connected Components y agregar aristas inversas donde faltaban.",
+          "lesson": "Los grafos de calles reales rara vez son fuertemente conectados; siempre verificar."
+        },
+        {
+          "problem": "Overflow en OR-Tools",
+          "solution": "Reemplazar valores inf o NaN por 999999 y validar la matriz antes de pasarla al solver.",
+          "lesson": "OR-Tools requiere valores enteros válidos; siempre sanitizar matrices."
+        }
+      ],
+      "archCtaTitle": "¿Quieres explorar el código?",
+      "archCtaDescription": "Toda la arquitectura está documentada y disponible en GitHub.",
+      "archCtaGithub": "Ver Repositorio",
+      "archCtaDocs": "Leer Documentación",
+      "simulationTitle": "Simulación en Vivo",
+      "simulationSubtitle": "Observa cómo el sistema optimiza 102 órdenes en 10 depósitos de Los Ángeles en tiempo real.",
+      "simulationBadge": "Dashboard Interactivo",
+      "simulationControls": {
+        "play": "Iniciar Simulación",
+        "pause": "Pausar",
+        "reset": "Reiniciar",
+        "speed": "Velocidad"
+      },
+      "simulationTabs": {
+        "overview": "Vista General",
+        "logs": "Logs en Vivo",
+        "depots": "Depósitos",
+        "fleet": "Flota"
+      },
+      "simulationMetrics": {
+        "totalOrders": "Total de Órdenes",
+        "completedOrders": "Órdenes Completadas",
+        "activeVehicles": "Vehículos Activos",
+        "onTimeDelivery": "On-Time Delivery",
+        "electricRoutes": "Rutas Eléctricas",
+        "co2Avoided": "CO₂ Evitado"
+      },
+      "simulationLogs": {
+        "title": "Registro de Eventos",
+        "filter": "Filtrar por depósito",
+        "allDepots": "Todos los depósitos"
+      },
+      "simulation": {
+  "statusActive": "Simulación Activa",
+  "statusReady": "Listo para iniciar",
+  "title": "Simulación en Vivo",
+  "subtitle": "Optimizando 102 órdenes en 10 depósitos de Los Ángeles",
+  "btnStart": "Iniciar",
+  "btnPause": "Pausar",
+  "btnReset": "Reiniciar",
+  "progressLabel": "Progreso de simulación",
+  "tabMap": "Mapa Animado",
+  "tabOverview": "Vista General",
+  "tabLogs": "Logs en Vivo",
+  "tabDepots": "Depósitos",
+  "tabFleet": "Flota",
+  "mapInfoTitle": "Mapa interactivo con Leaflet + CartoDB",
+  "mapInfoDesc": "Visualización en tiempo real de las rutas de los 10 depósitos. Los vehículos se mueven automáticamente siguiendo las calles reales.",
+  "mapTitle": "Simulación de Rutas de Entrega",
+  "metricOrdersCompleted": "Órdenes Completadas",
+  "metricOnTime": "On-Time Delivery",
+  "metricOnTimeDesc": "Excelente desempeño",
+  "metricElectricRoutes": "Rutas Eléctricas",
+  "metricElectricDesc": "92% de la flota",
+  "metricCo2": "CO₂ Evitado",
+  "metricCo2Desc": "Impacto positivo",
+  "metricActiveVehicles": "Vehículos Activos",
+  "metricActiveVehiclesDesc": "De 11 disponibles",
+  "metricBattery": "Utilización Batería",
+  "metricBatteryDesc": "Óptimo",
+  "depotSummaryTitle": "Resumen por Depósito",
+  "thDepot": "Depósito",
+  "thZone": "Zona",
+  "thOrders": "Órdenes",
+  "thVehicles": "Vehículos",
+  "thDistance": "Distancia",
+  "thOnTime": "On-Time",
+  "logsTitle": "Registro de Eventos",
+  "logsFilterAll": "Todos los depósitos",
+  "logsEmpty": "Inicia la simulación para ver los logs en tiempo real",
+  "labelOrders": "Órdenes:",
+  "labelVehicles": "Vehículos:",
+  "labelDistance": "Distancia:",
+  "fleetElectric": "Vehículos Eléctricos",
+  "fleetElectricDesc": "Rivian EDV 700 - 240 km autonomía",
+  "fleetCombustion": "Vehículo Combustión",
+  "fleetCombustionDesc": "Ford Transit - 400 km autonomía",
+  "fleetEvUsage": "Utilización EV",
+  "fleetEvUsageDesc": "Flota predominantemente eléctrica",
+  "fleetStatsTitle": "Estadísticas de Flota",
+  "statTotalVehicles": "Total Vehículos",
+  "statTotalDistance": "Distancia Total EV",
+  "statBatteryUsage": "Utilización Batería",
+  "statCo2Avoided": "CO₂ Evitado"
+},
+      "footer": {
+        "brandName": "Optimizador de rutas",
+        "brandTagline": "IA para ultima milla",
+        "mission": "Transformando la logística de última milla con inteligencia artificial híbrida y flotas 100% eléctricas. Entregas más rápidas, planeta mejor.",
+        "sustainabilityBadge": "~100kg CO₂ evitados por simulación",
+        "navTitle": "Explorar",
+        "navHome": "Inicio",
+        "navFuture": "Futuro",
+        "navhowIsItWork":"Como funciona",
+        "navArchitecture": "Arquitectura",
+        "navSimulation": "Simulación",
+        "resourcesTitle": "Recursos",
+        "resourceDocs": "Documentación Técnica",
+        "resourceAIBreakdown": "Desglose de IA",
+        "connectTitle": "Conecta",
+        "locationPrefix": "Modelado en",
+        "locationCity": "Los Ángeles, CA",
+        "locationSuffix": "Inspirado en la arquitectura logística de Amazon",
+        "email": "tu-email@ejemplo.com",
+        "copyright": "© {year} Victor Camacaro. Todos los derechos reservados.",
+        "devNotePrefix": "Desarrollado con",
+        "devNoteSuffix": "React, Tailwind CSS y 5 ramas de IA."
+      }
+    },
+    "en": {
+      "projectName": "Route Optimizer",
+      "projectTagline": "AI for Last-Mile",
+      "navHome": "Home",
+      "navHowItWorks": "How It Works",
+      "navSimulation": "Simulation",
+      "navFuture": "Future",
+      "navArchitecture": "Architecture",
+      "heroBadge": "Last-Mile Logistics · AI-Powered",
+      "heroTitle": "Deliveries from the",
+      "heroTitleHighlight": "Future, Today",
+      "heroDescription": "Last-mile optimizer with electric fleet and hybrid AI. 5 branches of artificial intelligence working together to reduce emissions, costs, and delivery times in Los Angeles.",
+      "ctaPrimary": "View Live Routes",
+      "ctaSecondary": "Explore AI Engine",
+      "stat1Label": "On-Time Delivery",
+      "stat2Label": "Routes on EVs",
+      "stat3Label": "Trips with Batch Picking",
+      "heroStat1Value": "100%",
+      "heroStat1Label": "On-Time",
+      "heroStat1Sub": "Punctual deliveries",
+      "heroStat2Value": "92%",
+      "heroStat2Label": "Electric",
+      "heroStat2Sub": "Sustainable fleet",
+      "heroStat3Value": "-47%",
+      "heroStat3Label": "Trips",
+      "heroStat3Sub": "Fewer emissions",
+      "heroCta1": "See How It Works",
+      "heroCta2": "AI Technology",
+      "heroDashTitle1": "Deliveries Today",
+      "heroDashValue1": "1,247",
+      "heroDashTitle2": "CO₂ Avoided",
+      "heroDashValue2": "100kg",
+      "heroDashRouteTitle": "Optimized Route #1",
+      "heroDashRouteSub": "24 deliveries · 180km",
+      "heroDashRouteStatus": "In progress",
+      "heroDashFleetTitle": "Electric Fleet",
+      "heroDashFleetSub": "43 active vehicles",
+      "heroDashFleetStatus": "92%",
+      "heroDashStat1Value": "10",
+      "heroDashStat1Label": "Depots",
+      "heroDashStat2Value": "47",
+      "heroDashStat2Label": "Vehicles",
+      "heroDashStat3Value": "184",
+      "heroDashStat3Label": "Deliveries/h",
+      "heroBadgePrime": "Prime Now",
+      "heroBadgeAI": "5 AI Models",
+      "useCasesTitle": "Real-World Use Cases",
+      "useCasesSubtitle": "How our system solves complex logistical challenges in real-time.",
+      "useCaseProblem": "Problem",
+      "useCaseSolution": "AI Solution",
+      "useCaseResult": "Result",
+      "useCaseScenario": "Real-World Scenarios",
+      "futureTitle": "The Future of Deliveries",
+      "futureSubtitle": "How Our System Transforms Last-Mile Logistics",
+      "futureIntro": "Every day, millions of packages travel from distribution centers to our doorsteps. It seems simple, but behind every delivery is a complex logistical orchestra that must answer questions like:",
+      "problemSituation": "Current Situation",
+      "problemSolution": "Our Solution",
+      "problemBenefit": "Benefit",
+       "futureIntroQuestions": [
+        {
+          "question": "Which vehicle should carry this package?",
+          "answer": "Our system automatically assigns the ideal vehicle (EV or combustion) based on distance and load."
+        },
+        {
+          "question": "What is the fastest route considering traffic?",
+          "answer": "A Machine Learning model predicts real traffic and calculates the optimal route before the driver leaves."
+        },
+        {
+          "question": "What happens if the driver runs out of battery?",
+          "answer": "The E-VRP algorithm never assigns a route that exceeds the electric vehicle's range (240 km)."
+        },
+        {
+          "question": "How do we deliver on time if the customer is only home between 2 and 4 PM?",
+          "answer": "OR-Tools strictly respects time windows, guaranteeing 100% On-Time Delivery."
+        },
+        {
+          "question": "What do we do if a street is closed due to an accident?",
+          "answer": "Our Q-Learning agent recalculates the route in seconds from the driver's current position."
+        },
+        {
+          "question": "What happens if several neighbors order a package at the same time?",
+          "answer": "Our Batch Picking algorithm automatically groups compatible orders into a single trip, reducing duplicate trips by 47%."
+        }
+      ],
+      "futureIntroConclusion": "Our system answers all these questions automatically, using artificial intelligence to make decisions that previously required hours of human planning.",
+      "futureProblemsTitle": "The 7 Real Problems We Solve",
+      "futureProblems": [
+        {
+          "icon": "Route",
+          "color": "blue",
+          "title": "1. The Problem of Inefficient Routes",
+          "situation": "Drivers follow manually planned routes or basic systems that don't consider real traffic, customer time windows, or vehicle capacity.",
+          "solution": "Automatically calculates the perfect route for each vehicle, considering time-of-day traffic, weather, special events, order priorities, and load capacity.",
+          "benefit": "Drivers arrive faster, deliver more packages per trip, and customers receive their orders on time."
+        },
+        {
+          "icon": "Battery",
+          "color": "green",
+          "title": "2. The Problem of Electric Vehicles",
+          "situation": "Companies are buying electric vehicles (like Amazon's Rivians) to reduce emissions, but they have a critical limitation: the battery drains and they can't recharge mid-day.",
+          "solution": "Automatically assigns short routes to electric vehicles and long routes to combustion vehicles. Never sends an EV on a trip that exceeds its range.",
+          "benefit": "92% of routes are completed by EVs, ~100 kg of CO2 avoided per day, and the company saves money on fuel."
+        },
+        {
+          "icon": "Zap",
+          "color": "orange",
+          "title": "3. The Problem of Urgent Orders",
+          "situation": "When an urgent order arrives (like Amazon Prime Now, which must be delivered in 2 hours), traditional systems don't know how to reorganize existing routes to include it.",
+          "solution": "Features a smart dispatcher that learns from experience. When a new order arrives, it decides in seconds whether to assign it to a vehicle en route, reject it, or wait for a closer vehicle.",
+          "benefit": "Urgent orders are automatically prioritized, improving customer satisfaction without disrupting the entire operation."
+        },
+        {
+          "icon": "Hexagon",
+          "color": "cyan",
+          "title": "4. The Problem of Coverage Zones",
+          "situation": "When a company has 10 depots in a city, sometimes two depots cover the same zone (duplicating efforts) or streets are left uncovered (unassigned orders).",
+          "solution": "Divides the city into perfect hexagonal zones (like a honeycomb), where each hexagon belongs to exactly one depot. No gaps, no overlaps.",
+          "benefit": "Each order is instantly assigned to the correct depot, with no confusion and equitable workload distribution."
+        },
+        {
+          "icon": "Package",
+          "color": "purple",
+          "title": "5. The Problem of Duplicate Trips",
+          "situation": "If 5 customers in the same neighborhood order packages at the same time, the system might send 5 different vehicles, each making the same trip.",
+          "solution": "Groups orders going to the same neighborhood with compatible time windows. Instead of 5 trips, it makes 1 single trip with 5 packages.",
+          "benefit": "47% fewer trips in the city, less traffic congestion, lower operating costs, and a smaller carbon footprint."
+        },
+        {
+          "icon": "AlertTriangle",
+          "color": "red",
+          "title": "6. The Problem of Unexpected Events",
+          "situation": "If a street closes due to an accident or construction, drivers must call the base, wait for instructions, and lose valuable time.",
+          "solution": "Automatically detects which vehicles are affected by the closure, identifies which orders haven't been delivered yet, and recalculates the optimal route in seconds from the driver's current position.",
+          "benefit": "Drivers don't waste time waiting for instructions, customers don't notice the delay, and the system adapts to the changing reality of the city."
+        },
+        {
+          "icon": "Leaf",
+          "color": "emerald",
+          "title": "7. The Problem of Sustainability",
+          "situation": "Logistics companies know they must reduce emissions, but lack tools to measure the real impact of their operational decisions.",
+          "solution": "Automatically calculates how many kilograms of CO2 are avoided by using electric vehicles, how much money is saved on fuel, and what percentage of the electric fleet is actually being utilized.",
+          "benefit": "The company can report real sustainability metrics to customers, investors, and regulators, aligning with commitments like Amazon's Climate Pledge."
+        }
+      ],
+      "futureImpactTitle": "The Impact in Numbers",
+      "futureImpactMetrics": [
+        {
+          "label": "On-time deliveries",
+          "value": "100%",
+          "desc": "of orders arrive within the promised window"
+        },
+        {
+          "label": "Trip reduction",
+          "value": "47%",
+          "desc": "fewer vehicles on the street thanks to consolidation"
+        },
+        {
+          "label": "Electric fleet usage",
+          "value": "92%",
+          "desc": "of routes completed by electric vehicles"
+        },
+        {
+          "label": "CO2 avoided",
+          "value": "~100 kg",
+          "desc": "per day of operation"
+        },
+        {
+          "label": "Fuel savings",
+          "value": "~$100",
+          "desc": "per day of operation"
+        },
+        {
+          "label": "Response time",
+          "value": "<1 min",
+          "desc": "route recalculation upon incidents"
+        }
+      ],
+      "futureWhyTitle": "Why Does This Matter?",
+      "futureWhySubtitle": "Technology is not just code. It is a tool that transforms the lives of all actors in the logistics chain.",
+      "futureWhySections": [
+        {
+          "icon": "Building",
+          "color": "blue",
+          "title": "For Companies",
+          "items": [
+            "Reduce operational costs (less fuel, fewer vehicles, less wasted time)",
+            "Improve customer satisfaction (on-time deliveries, even in adverse conditions)",
+            "Meet sustainability goals (measurable emission reductions)",
+            "Scale without chaos (the system handles 100 orders just as well as 1,000)"
+          ]
+        },
+        {
+          "icon": "Truck",
+          "color": "cyan",
+          "title": "For Drivers",
+          "items": [
+            "Clear and optimized routes (no wasted time driving in circles)",
+            "Less stress (the system tells them exactly where to go and in what order)",
+            "Adequate vehicles (they never run out of battery mid-route)"
+          ]
+        },
+        {
+          "icon": "Package",
+          "color": "orange",
+          "title": "For Customers",
+          "items": [
+            "On-time deliveries (they receive their packages when promised)",
+            "Less congestion (fewer vehicles driving around their neighborhood)",
+            "Positive environmental impact (their order arrived in an electric vehicle)"
+          ]
+        },
+        {
+          "icon": "Leaf",
+          "color": "green",
+          "title": "For the City",
+          "items": [
+            "Less traffic (47% fewer duplicate trips)",
+            "Less pollution (more electric vehicles, fewer emissions)",
+            "Safer streets (less stressed drivers with clear routes)"
+          ]
+        }
+      ],
+      "futureVisionTitle": "The Future We Are Building",
+      "futureVisionText": "This system is not just an optimization tool; it is a decision-making platform that replicates the intelligence of the world's best logistics managers, but at a scale and speed impossible for a human.",
+      "futureVisionImagining": "Imagine a world where:",
+      "futureVisionPoints": [
+        "Every package arrives exactly when promised",
+        "Electric vehicles are the norm, not the exception",
+        "Routes adapt to traffic in real-time",
+        "Urgent orders are prioritized without disrupting everything",
+        "Companies measure and reduce their carbon footprint automatically"
+      ],
+      "futureVisionConclusion": "That world already exists in our simulation. And it is ready to be implemented in the real operation of any last-mile company.",
+      "futureCtaTitle": "How to Get Started?",
+      "futureCtaSubtitle": "If your company faces last-mile logistics challenges, this system can:",
+      "futureCtaSteps": [
+        "Diagnose your current routes and identify inefficiencies",
+        "Simulate scenarios (what if we add 10 electric vehicles? What if we open a new depot?)",
+        "Optimize your daily operations with routes calculated in minutes",
+        "Measure your environmental and financial impact in real-time"
+      ],
+      "futureCtaNote": "You don't need to be a technology expert. Our interactive dashboard shows everything in clear charts, animated maps, and easy-to-understand metrics.",
+      "futureCtaButton1": "View Live Simulator",
+      "futureCtaButton2": "Explore Technical Documentation",
+      "futureTagline": "Because every delivery counts. Every kilometer matters. Every decision has an impact.",
+      "futureTaglineSub": "Transforming the last mile, one smart route at a time.",
+      "archTitle": "System Architecture",
+      "archSubtitle": "5 decoupled layers, 5 artificial intelligences, 1 unified system.",
+      "archBadge": "Software Engineering",
+      "archLayersTitle": "Modular Layered Architecture",
+      "archLayersSubtitle": "Strict separation of responsibilities: business logic doesn't know the UI, and the UI doesn't modify the state.",
+      "archLayers": [
+        {
+          "number": "01",
+          "folder": "config/",
+          "name": "Configuration",
+          "desc": "Global constants: 10 real Amazon depots, heterogeneous fleet, capacities, and coverage area. Allows reconfiguring the system without touching the logic.",
+          "icon": "Settings",
+          "color": "blue"
+        },
+        {
+          "number": "02",
+          "folder": "models/",
+          "name": "Data Models",
+          "desc": "Pure entities (Order, Vehicle, VehicleType) with no UI or logic dependencies. Ensures data integrity and typing throughout the application.",
+          "icon": "Database",
+          "color": "cyan"
+        },
+        {
+          "number": "03",
+          "folder": "core/",
+          "name": "Algorithmic Core",
+          "desc": "Pure business logic: VRPOptimizer, TrafficMLModel, DynamicDispatcher, H3Zones, BatchPicker, and LiveRerouter. The brain of the system.",
+          "icon": "Cpu",
+          "color": "purple"
+        },
+        {
+          "number": "04",
+          "folder": "visualization/",
+          "name": "Visualization",
+          "desc": "Animated map rendering with Leaflet and Folium. Consumes simulation state without modifying it, ensuring separation of responsibilities.",
+          "icon": "Map",
+          "color": "green"
+        },
+        {
+          "number": "05",
+          "folder": "app.py",
+          "name": "Interactive Dashboard",
+          "desc": "Presentation layer in Streamlit with real-time KPIs, Plotly charts, and animated route map. The user contact point.",
+          "icon": "LayoutDashboard",
+          "color": "orange"
+        }
+      ],
+      "archStackTitle": "Hybrid Artificial Intelligence Stack",
+      "archStackSubtitle": "Each AI branch solves a different problem. Together, they achieve what none could alone.",
+      "archStack": [
+        {
+          "name": "Mathematical Optimization",
+          "tech": "OR-Tools (CP-SAT, Guided Local Search)",
+          "desc": "Solves the E-VRP with heterogeneous fleet, battery constraints (240 km Rivian), and strict time windows.",
+          "icon": "Calculator",
+          "color": "blue"
+        },
+        {
+          "name": "Machine Learning",
+          "tech": "Random Forest Regressor (Scikit-Learn)",
+          "desc": "Predicts real traffic times based on hour, weather, road type, and special events (R² > 0.93).",
+          "icon": "Brain",
+          "color": "cyan"
+        },
+        {
+          "name": "Reinforcement Learning",
+          "tech": "Q-Learning (Tabular)",
+          "desc": "Dynamic dispatch agent that decides in real-time: Assign, Reject, or Wait for incoming orders.",
+          "icon": "GitBranch",
+          "color": "green"
+        },
+        {
+          "name": "Geospatial AI",
+          "tech": "H3 Hexagonal Indexing (Uber)",
+          "desc": "Divides Los Angeles into perfect hexagons around each depot. Coverage without gaps or overlaps.",
+          "icon": "Hexagon",
+          "color": "purple"
+        },
+        {
+          "name": "Graph Theory",
+          "tech": "NetworkX (Dijkstra, SCC)",
+          "desc": "Real LA street graph with 178,267 nodes and 513,884 edges. Routes that follow real streets, not straight lines.",
+          "icon": "Network",
+          "color": "orange"
+        }
+      ],
+      "archDecisionsTitle": "Key Technical Decisions",
+      "archDecisionsSubtitle": "Each architectural decision responds to a real problem from the logistics world.",
+      "archDecisions": [
+        {
+          "title": "Hybrid OR-Tools + Q-Learning",
+          "desc": "OR-Tools calculates the initial optimal route; Q-Learning handles real-time exceptions (new orders, street closures).",
+          "icon": "Zap"
+        },
+        {
+          "title": "ML for Real Traffic",
+          "desc": "Random Forest outperforms static traffic tables. Predicts real times considering hour, weather, and special events.",
+          "icon": "TrendingUp"
+        },
+        {
+          "title": "Strongly Connected Graph",
+          "desc": "Ensures the LA graph has a return route from any point. Without this, OR-Tools would fail with 'no solution'.",
+          "icon": "Network"
+        },
+        {
+          "title": "Batch Picking with H3",
+          "desc": "Consolidates orders from the same hexagon with compatible windows. Reduces individual trips by 47%.",
+          "icon": "Package"
+        },
+        {
+          "title": "Live Re-routing",
+          "desc": "Simulates traffic incidents and recalculates routes from the driver's current position in seconds.",
+          "icon": "AlertTriangle"
+        },
+        {
+          "title": "Real Heterogeneous Fleet",
+          "desc": "Rivian EDV (240 km), Ford Transit (400 km), and Amazon Flex. Each with differentiated costs and capacities.",
+          "icon": "Truck"
+        }
+      ],
+      "archFlowTitle": "System Data Flow",
+      "archFlowSubtitle": "This is how an order travels from the moment the customer clicks until it arrives at their door.",
+      "archFlow": [
+        {
+          "step": "1",
+          "title": "Order Received",
+          "desc": "Customer makes a purchase. System receives location, weight, and time window.",
+          "icon": "Package",
+          "color": "blue"
+        },
+        {
+          "step": "2",
+          "title": "H3 Assignment",
+          "desc": "The hexagon determines which depot the order belongs to in milliseconds.",
+          "icon": "Hexagon",
+          "color": "cyan"
+        },
+        {
+          "step": "3",
+          "title": "ML Prediction",
+          "desc": "Random Forest estimates real travel time considering traffic and weather.",
+          "icon": "Brain",
+          "color": "purple"
+        },
+        {
+          "step": "4",
+          "title": "Batch Picking",
+          "desc": "Nearby orders with compatible windows are grouped to reduce trips.",
+          "icon": "Layers",
+          "color": "green"
+        },
+        {
+          "step": "5",
+          "title": "OR-Tools Optimization",
+          "desc": "The mathematically perfect route is calculated respecting battery and shifts.",
+          "icon": "Calculator",
+          "color": "orange"
+        },
+        {
+          "step": "6",
+          "title": "Q-Learning Dispatch",
+          "desc": "The agent decides in real-time whether to assign, reject, or wait for the order.",
+          "icon": "GitBranch",
+          "color": "red"
+        },
+        {
+          "step": "7",
+          "title": "Delivery + Metrics",
+          "desc": "Driver delivers. CO2 avoided, electric km, and On-Time are recorded.",
+          "icon": "CheckCircle2",
+          "color": "emerald"
+        }
+      ],
+      "archChallengesTitle": "Technical Challenges Overcome",
+      "archChallengesSubtitle": "The real problems we faced during development and how we solved them.",
+      "challengeProblem": "Problem",
+      "challengeSolution": "Solution",
+      "challengeLesson": "Lesson",
+      "archChallenges": [
+        {
+          "problem": "CP Solver Fail with Time Windows",
+          "solution": "Increase the time horizon to 1440 min (24h) and add 600 min of slack to allow real waits.",
+          "lesson": "The dimension horizon must be greater than the maximum time window of any order."
+        },
+        {
+          "problem": "Graph Indices vs Matrix",
+          "solution": "Create a node_to_matrix_idx mapping that converts OSMnx IDs (e.g., 21098552) to sequential indices.",
+          "lesson": "Graph IDs should never be used as array indices."
+        },
+        {
+          "problem": "Graph Not Strongly Connected",
+          "solution": "Apply Strongly Connected Components algorithm and add inverse edges where they were missing.",
+          "lesson": "Real street graphs are rarely strongly connected; always verify."
+        },
+        {
+          "problem": "Overflow in OR-Tools",
+          "solution": "Replace inf or NaN values with 999999 and validate the matrix before passing it to the solver.",
+          "lesson": "OR-Tools requires valid integer values; always sanitize matrices."
+        }
+      ],
+      "archCtaTitle": "Want to explore the code?",
+      "archCtaDescription": "The entire architecture is documented and available on GitHub.",
+      "archCtaGithub": "View Repository",
+      "archCtaDocs": "Read Documentation",
+      "simulationTitle": "Live Simulation",
+      "simulationSubtitle": "Watch how the system optimizes 102 orders across 10 Los Angeles depots in real-time.",
+      "simulationBadge": "Interactive Dashboard",
+      "simulationControls": {
+        "play": "Start Simulation",
+        "pause": "Pause",
+        "reset": "Reset",
+        "speed": "Speed"
+      },
+      "simulationTabs": {
+        "overview": "Overview",
+        "logs": "Live Logs",
+        "depots": "Depots",
+        "fleet": "Fleet"
+      },
+      "simulationMetrics": {
+        "totalOrders": "Total Orders",
+        "completedOrders": "Completed Orders",
+        "activeVehicles": "Active Vehicles",
+        "onTimeDelivery": "On-Time Delivery",
+        "electricRoutes": "Electric Routes",
+        "co2Avoided": "CO₂ Avoided"
+      },
+      "simulationLogs": {
+        "title": "Event Log",
+        "filter": "Filter by depot",
+        "allDepots": "All depots"
+      },
+
+      "simulation": {
+  "statusActive": "Simulation Active",
+  "statusReady": "Ready to start",
+  "title": "Live Simulation",
+  "subtitle": "Optimizing 102 orders across 10 Los Angeles depots",
+  "btnStart": "Start",
+  "btnPause": "Pause",
+  "btnReset": "Reset",
+  "progressLabel": "Simulation progress",
+  "tabMap": "Animated Map",
+  "tabOverview": "Overview",
+  "tabLogs": "Live Logs",
+  "tabDepots": "Depots",
+  "tabFleet": "Fleet",
+  "mapInfoTitle": "Interactive map with Leaflet + CartoDB",
+  "mapInfoDesc": "Real-time visualization of routes from 10 depots. Vehicles move automatically following real streets.",
+  "mapTitle": "Delivery Route Simulation",
+  "metricOrdersCompleted": "Completed Orders",
+  "metricOnTime": "On-Time Delivery",
+  "metricOnTimeDesc": "Excellent performance",
+  "metricElectricRoutes": "Electric Routes",
+  "metricElectricDesc": "92% of the fleet",
+  "metricCo2": "CO₂ Avoided",
+  "metricCo2Desc": "Positive impact",
+  "metricActiveVehicles": "Active Vehicles",
+  "metricActiveVehiclesDesc": "Out of 11 available",
+  "metricBattery": "Battery Usage",
+  "metricBatteryDesc": "Optimal",
+  "depotSummaryTitle": "Depot Summary",
+  "thDepot": "Depot",
+  "thZone": "Zone",
+  "thOrders": "Orders",
+  "thVehicles": "Vehicles",
+  "thDistance": "Distance",
+  "thOnTime": "On-Time",
+  "logsTitle": "Event Log",
+  "logsFilterAll": "All depots",
+  "logsEmpty": "Start the simulation to see live logs",
+  "labelOrders": "Orders:",
+  "labelVehicles": "Vehicles:",
+  "labelDistance": "Distance:",
+  "fleetElectric": "Electric Vehicles",
+  "fleetElectricDesc": "Rivian EDV 700 - 240 km range",
+  "fleetCombustion": "Combustion Vehicle",
+  "fleetCombustionDesc": "Ford Transit - 400 km range",
+  "fleetEvUsage": "EV Utilization",
+  "fleetEvUsageDesc": "Predominantly electric fleet",
+  "fleetStatsTitle": "Fleet Statistics",
+  "statTotalVehicles": "Total Vehicles",
+  "statTotalDistance": "Total EV Distance",
+  "statBatteryUsage": "Battery Usage",
+  "statCo2Avoided": "CO₂ Avoided"
+},
+      "useCases": [
+        {
+          "icon": "Calendar",
+          "color": "blue",
+          "title": "Peak Season (Black Friday)",
+          "scenario": "Order volume multiplies by 5 in a single day.",
+          "solution": "The system automatically groups nearby orders (Batch Picking) and distributes the load evenly across the 10 depots.",
+          "result": "47% fewer trips, zero operational collapses."
+        },
+        {
+          "icon": "Zap",
+          "color": "orange",
+          "title": "Emergency Delivery (Prime Now)",
+          "scenario": "A customer needs urgent medication in less than 2 hours.",
+          "solution": "The Q-Learning agent detects the priority and dynamically reassigns a nearby Rivian vehicle, skipping the standard queue.",
+          "result": "Delivery in 45 minutes, 100% satisfied customer."
+        },
+        {
+          "icon": "AlertTriangle",
+          "color": "red",
+          "title": "Unexpected Road Closure",
+          "scenario": "An accident blocks the main highway at 8:00 AM.",
+          "solution": "The Live Rerouting module detects the incident and recalculates the optimal route in seconds from the driver's current position.",
+          "result": "Alternative route in 3 seconds, no delivery delays."
+        },
+        {
+          "icon": "Leaf",
+          "color": "green",
+          "title": "Climate Pledge Compliance",
+          "scenario": "The company demands a 30% carbon footprint reduction this year.",
+          "solution": "The E-VRP engine assigns short routes (<240 km) exclusively to the Rivian EDV fleet, leaving long routes for Ford Transit.",
+          "result": "92% of routes on EVs, 103.5 kg of CO2 avoided per simulation."
+        }
+      ],
+      "hookTitle": "Have you ever waited for a package that \"arrives today\" but never does?",
+      "hookSubtitle": "Behind every delivery is a complex logistical orchestra that must answer questions like:",
+      "hookQuestions": [
+        {
+          "question": "Which vehicle should carry this package?",
+          "answer": "Our system automatically assigns the ideal vehicle (EV or combustion) based on distance and load."
+        },
+        {
+          "question": "What is the fastest route considering traffic?",
+          "answer": "A Machine Learning model predicts real traffic and calculates the optimal route before the driver leaves."
+        },
+        {
+          "question": "What happens if the driver runs out of battery?",
+          "answer": "The E-VRP algorithm never assigns a route that exceeds the electric vehicle's range (240 km)."
+        },
+        {
+          "question": "How do we deliver on time if the customer is only home between 2 and 4 PM?",
+          "answer": "OR-Tools strictly respects time windows, guaranteeing 100% On-Time Delivery."
+        },
+        {
+          "question": "What do we do if a street is closed due to an accident?",
+          "answer": "Our Q-Learning agent recalculates the route in seconds from the driver's current position."
+        },
+        {
+          "question": "What happens if several neighbors order a package at the same time?",
+          "answer": "Our Batch Picking algorithm automatically groups compatible orders into a single trip, reducing duplicate trips by 47%."
+        }
+      ],
+      "hookConclusion": "Our system answers all these questions automatically, using hybrid artificial intelligence to make decisions that previously required hours of human planning.",
+      "problemsTitle": "The Last-Mile Problem",
+      "problemsSubtitle": "Final delivery represents 53% of total logistics cost. Our AI drastically reduces it.",
+      "problems": [
+        {
+          "icon": "AlertTriangle",
+          "title": "Static Routes",
+          "desc": "Traditional systems don't consider real-time traffic, weather, or dynamic delivery windows."
+        },
+        {
+          "icon": "Battery",
+          "title": "Range Anxiety",
+          "desc": "Electric vehicles run out of battery because routes don't calculate real consumption from traffic and topography."
+        },
+        {
+          "icon": "TrendingDown",
+          "title": "50% Empty Trips",
+          "desc": "Trucks return empty to the depot, wasting fuel, time, and generating unnecessary emissions."
+        },
+        {
+          "icon": "Clock",
+          "title": "Failed Deliveries",
+          "desc": "Without smart prioritization, urgent orders (Prime Now) compete with standard ones, causing delays."
+        }
+      ],
+      "sevenProblemsTitle": "7 Real Problems We Solve",
+      "sevenProblemsSubtitle":"Cutting-edge technology translated into tangible results for the operation.",
+      "sevenProblemsBenefitTitle":"Benefit",
+      "sevenProblems": [
+        {
+          "image": "images/problems/route-optimization.webp",
+          "color": "blue",
+          "title": "1. Inefficient Routes",
+          "desc": "Calculates the perfect route considering traffic, weather, and strict time windows.",
+          "benefit": "Drivers arrive faster, delivering more packages per trip."
+        },
+        {
+          "image": "images/problems/autonomy.jpg",
+          "color": "green",
+          "title": "2. Range Anxiety",
+          "desc": "Assigns short routes to electric vehicles and long routes to combustion vehicles.",
+          "benefit": "92% of routes completed by EVs, ~100 kg of CO2 avoided per day."
+        },
+        {
+          "image": "images/problems/q-learning.webp",
+          "color": "orange",
+          "title": "3. Urgent Orders",
+          "desc": "A Q-Learning agent decides in seconds whether to assign, reject, or wait for new orders.",
+          "benefit": "Prime Now orders are automatically prioritized without collapsing the operation."
+        },
+        {
+          "image": "images/problems/h3.webp",
+          "color": "cyan",
+          "title": "4. Duplicate Coverage",
+          "desc": "Divides the city into perfect hexagons (Uber's H3) without gaps or overlaps.",
+          "benefit": "Each order is assigned to the correct depot in milliseconds."
+        },
+        {
+          "image": "images/problems/batch-picking.webp",
+          "color": "purple",
+          "title": "5. Duplicate Trips",
+          "desc": "Groups orders from the same neighborhood with compatible time windows (Batch Picking).",
+          "benefit": "47% fewer vehicles on the street, reducing congestion and costs."
+        },
+        {
+          "image": "images/problems/traffic-incident.webp",
+          "color": "red",
+          "title": "6. Road Incidents",
+          "desc": "Detects street closures and recalculates the optimal route in seconds from the current position.",
+          "benefit": "Customers don't notice the delay, the system adapts to the reality of the city."
+        },
+        {
+          "image": "images/problems/sustainability.jpg",
+          "color": "emerald",
+          "title": "7. Lack of Sustainable Metrics",
+          "desc": "Measures in real-time the avoided CO2, fuel savings, and actual use of the electric fleet.",
+          "benefit": "Real and auditable reports to comply with Amazon's Climate Pledge."
+        }
+      ],
+      "howItWorksTitle": "How the Magic Works",
+      "howItWorksSubtitle": "Three simple steps that transform logistical chaos into a predictable and sustainable operation.",
+      "howItWorks": [
+        {
+          "icon": "Brain",
+          "color": "blue",
+          "title": "1. Predicts",
+          "desc": "The Random Forest model analyzes time, weather, road type, and special events to predict real travel time with 93% accuracy."
+        },
+        {
+          "icon": "Cpu",
+          "color": "cyan",
+          "title": "2. Optimizes",
+          "desc": "OR-Tools calculates the mathematically perfect route, grouping nearby orders and strictly respecting electric fleet autonomy."
+        },
+        {
+          "icon": "GitBranch",
+          "color": "green",
+          "title": "3. Adapts",
+          "desc": "When an unexpected event occurs, the Q-Learning agent reacts in seconds, reassigning routes without breaking the operation."
+        }
+      ],
+      "resultsTitle": "Simulation Results",
+      "resultsSubtitle": "KPIs extracted directly from the execution log with 10 Amazon depots in Los Angeles.",
+      "resultsKpis": [
+        {
+          "value": "100%",
+          "label": "On-Time Delivery",
+          "sub": "102/102 orders fulfilled",
+          "icon": "CheckCircle2",
+          "color": "green"
+        },
+        {
+          "value": "90.9%",
+          "label": "Electric Routes",
+          "sub": "10 out of 11 EV vehicles",
+          "icon": "Zap",
+          "color": "blue"
+        },
+        {
+          "value": "-47%",
+          "label": "Trips with Batch Picking",
+          "sub": "From 102 to 55 trips",
+          "icon": "TrendingDown",
+          "color": "orange"
+        },
+        {
+          "value": "103.5 kg",
+          "label": "CO₂ Avoided",
+          "sub": "Per complete simulation",
+          "icon": "Leaf",
+          "color": "cyan"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "value": "178,267",
+          "label": "Intersections (Nodes) in the graph"
+        },
+        {
+          "value": "575 km",
+          "label": "Distance traveled by electric vehicles"
+        },
+        {
+          "value": "225",
+          "label": "Total vehicles in the fleet"
+        }
+      ],
+      "depotsTitle": "10 Amazon Depots in Los Angeles",
+      "depotsSubtitle": "Each depot has its own heterogeneous fleet, maximum capacity, and coverage zone defined by H3 hexagons.",
+      "depots": [
+        {
+          "code": "DPS6",
+          "zone": "Simi Valley & Ventura County",
+          "orders": 10
+        },
+        {
+          "code": "DUR1",
+          "zone": "San Fernando Valley & Burbank",
+          "orders": 10
+        },
+        {
+          "code": "DLX9",
+          "zone": "West LA, Santa Monica & Culver City",
+          "orders": 8
+        },
+        {
+          "code": "DCX7",
+          "zone": "Long Beach, Torrance & South Bay",
+          "orders": 10
+        },
+        {
+          "code": "VAX3",
+          "zone": "Gardena, Compton & South LA",
+          "orders": 8,
+          "special": "Sub-Same Day"
+        },
+        {
+          "code": "DLX5",
+          "zone": "Central LA, Glendale & Northeast",
+          "orders": 12
+        },
+        {
+          "code": "DFX3",
+          "zone": "LAX, Westchester & South LA",
+          "orders": 14
+        },
+        {
+          "code": "DLX7",
+          "zone": "Cypress, Stanton & North OC",
+          "orders": 10
+        },
+        {
+          "code": "DPS1",
+          "zone": "Rosemead & San Gabriel Valley",
+          "orders": 9
+        },
+        {
+          "code": "DLA3",
+          "zone": "Commerce, East LA & Montebello",
+          "orders": 11
+        }
+      ],
+      "impactTitle": "Why This Matters?",
+      "impactSubtitle": "Technology is not just code. It is a tool that transforms the lives of all actors in the logistics chain.",
+      "impactSections": [
+        {
+          "icon": "Building",
+          "color": "blue",
+          "title": "For Companies",
+          "items": [
+            "Drastic reduction in operational costs.",
+            "Measurable compliance with the Climate Pledge.",
+            "Scalability without operational chaos."
+          ]
+        },
+        {
+          "icon": "Truck",
+          "color": "cyan",
+          "title": "For Drivers",
+          "items": [
+            "Clear routes, no unnecessary driving.",
+            "Less stress with precise instructions.",
+            "Guaranteed autonomy safety."
+          ]
+        },
+        {
+          "icon": "Package",
+          "color": "orange",
+          "title": "For Customers",
+          "items": [
+            "100% on-time deliveries.",
+            "Less congestion and noise in their neighborhood.",
+            "Positive environmental impact."
+          ]
+        },
+        {
+          "icon": "Leaf",
+          "color": "green",
+          "title": "For the City",
+          "items": [
+            "47% fewer duplicate trips.",
+            "Less pollution from electric fleets.",
+            "Safer and more predictable streets."
+          ]
+        }
+      ],
+      "aiBadge": "Hybrid AI Engine",
+      "aiTitle": "5 AI Branches, 1 System",
+      "aiSubtitle": "Each layer of the engine solves a different problem. Together, they achieve what none could alone.",
+      "aiBranches": [
+        {
+          "icon": "Cpu",
+          "name": "OR-Tools",
+          "desc": "E-VRP mathematical optimization",
+          "color": "blue"
+        },
+        {
+          "icon": "Brain",
+          "name": "Random Forest",
+          "desc": "Traffic prediction (R² > 0.93)",
+          "color": "cyan"
+        },
+        {
+          "icon": "GitBranch",
+          "name": "Q-Learning",
+          "desc": "Real-time dynamic dispatch",
+          "color": "blue"
+        },
+        {
+          "icon": "MapPin",
+          "name": "Uber H3",
+          "desc": "Geospatial hexagonal indexing",
+          "color": "cyan"
+        },
+        {
+          "icon": "Route",
+          "name": "NetworkX",
+          "desc": "Real LA route graphs",
+          "color": "blue"
+        }
+      ],
+      "fleetTitle": "Heterogeneous Electric Fleet",
+      "fleetSubtitle": "10 real depots, 3 vehicle types, 1 goal: zero emissions.",
+      "vehicles": [
+        {
+          "name": "Rivian EDV 700",
+          "type": "100% Electric",
+          "range": "240 km",
+          "capacity": "700 packages",
+          "icon": "⚡",
+          "color": "blue",
+          "image": "/images/flota/Rivian-Canada-Amazon.webp"
+        },
+        {
+          "name": "Ford Transit Custom",
+          "type": "Hybrid",
+          "range": "400 km",
+          "capacity": "300 packages",
+          "icon": "🔋",
+          "color": "cyan",
+          "image": "/images/flota/ford-transit.webp"
+        },
+        {
+          "name": "Amazon Flex (Gig)",
+          "type": "Combustion",
+          "range": "500 km",
+          "capacity": "50 packages",
+          "icon": "⛽",
+          "color": "orange",
+          "image": "/images/flota/amazon-flex.jpg"
+        }
+      ],
+      "visionBadge": "Our Vision",
+      "visionTitle": "Transforming last-mile logistics through AI",
+      "visionDesc": "The last mile represents 53% of total logistics costs. This project demonstrates that it is possible to achieve 100% On-Time Delivery with an electric fleet, reducing empty trips and avoiding emissions, through an integral engineering approach.",
+      "visionGoals": [
+        "E-VRP with OR-Tools",
+        "ML Prediction (R² > 0.93)",
+        "Real-time RL Dispatch",
+        "H3 Geospatial Indexing"
+      ],
+      "ctaTitle": "Ready to optimize your deliveries?",
+      "ctaDescription": "Explore the code, technical documentation, or try the live simulator.",
+      "ctaGithub": "View on GitHub",
+      "ctaSimulator": "Try Simulator",
+      "footer": {
+        "brandName": "Delivery AI",
+        "brandTagline": "Last-Mile Optimizer",
+        "mission": "Transforming last-mile logistics with hybrid AI and 100% electric fleets. Faster deliveries, better planet.",
+        "sustainabilityBadge": "~100kg CO₂ avoided per simulation",
+        "navTitle": "Explore",
+        "navHome": "Home",
+         "navHowItWorks":"How It Works",
+        "navSimulation": "Simulation",
+        "navFuture": "Future",
+        "navArchitecture": "Architecture",
+        "resourcesTitle": "Resources",
+        "resourceDocs": "Technical Documentation",
+        "resourceAIBreakdown": "AI Breakdown",
+        "connectTitle": "Connect",
+        "locationPrefix": "Modeled in",
+        "locationCity": "Los Angeles, CA",
+        "locationSuffix": "Inspired by Amazon's logistics architecture",
+        "email": "your-email@example.com",
+        "copyright": "© {year} Victor Camacaro. All rights reserved.",
+        "devNotePrefix": "Developed with",
+        "devNoteSuffix": "React, Tailwind CSS, and 5 branches of AI."
+      }
+    }
+  }
+}
