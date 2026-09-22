@@ -7,7 +7,6 @@ import {
   Brain,
   Calculator,
   Truck,
-  Clock,
   BatteryWarning,
   Zap,
   AlertTriangle,
@@ -19,7 +18,7 @@ import {
 } from 'lucide-react';
 
 const ComoFunciona = () => {
-  const { language, texts } = useContext(LanguageContext);
+  const { language } = useContext(LanguageContext);
   // Puedes agregar estas claves a tu texts.json más tarde, por ahora usamos fallbacks en español
   const isEs = language === 'es';
 
