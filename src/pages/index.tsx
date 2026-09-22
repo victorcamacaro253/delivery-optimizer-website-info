@@ -38,14 +38,6 @@ const Home = () => {
   return map[color] || map.blue;
 };
 
-  const getVehicleColorClasses = (color: string) => {
-    const map: Record<string, string> = {
-      blue: 'from-blue-50 to-white border-blue-200 hover:border-blue-400',
-      cyan: 'from-cyan-50 to-white border-cyan-200 hover:border-cyan-400',
-      orange: 'from-orange-50 to-white border-orange-200 hover:border-orange-400'
-    };
-    return map[color] || map.blue;
-  };
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
