@@ -8,7 +8,8 @@ import {
   ArrowRight, CheckCircle2, AlertTriangle,
   BarChart3, Cpu, GitBranch, Target,
   Lightbulb, ListChecks, Shield, Building,
-  Calendar
+  Calendar,
+  Mail
 } from 'lucide-react';
 import DepotsMap from '../components/DepotsMap';
 
@@ -25,25 +26,25 @@ const Home = () => {
 
   // Funciones auxiliares para clases dinámicas de Tailwind
   const getColorClasses = (color: string) => {
-  const map: Record<string, { bg: string; text: string }> = {
-    blue: { bg: 'bg-blue-100', text: 'text-blue-600' },
-    cyan: { bg: 'bg-cyan-100', text: 'text-cyan-600' },
-    orange: { bg: 'bg-orange-100', text: 'text-orange-600' },
-    green: { bg: 'bg-green-100', text: 'text-green-600' },
-    purple: { bg: 'bg-purple-100', text: 'text-purple-600' },
-    red: { bg: 'bg-red-100', text: 'text-red-600' },
-    emerald: { bg: 'bg-emerald-100', text: 'text-emerald-600' },
-    white: { bg: 'bg-white/20', text: 'text-white' }
+    const map: Record<string, { bg: string; text: string }> = {
+      blue: { bg: 'bg-blue-100', text: 'text-blue-600' },
+      cyan: { bg: 'bg-cyan-100', text: 'text-cyan-600' },
+      orange: { bg: 'bg-orange-100', text: 'text-orange-600' },
+      green: { bg: 'bg-green-100', text: 'text-green-600' },
+      purple: { bg: 'bg-purple-100', text: 'text-purple-600' },
+      red: { bg: 'bg-red-100', text: 'text-red-600' },
+      emerald: { bg: 'bg-emerald-100', text: 'text-emerald-600' },
+      white: { bg: 'bg-white/20', text: 'text-white' }
+    };
+    return map[color] || map.blue;
   };
-  return map[color] || map.blue;
-};
 
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Hero />
 
-            {/* 1. EL GANCHO: EL PROBLEMA REAL */}
+      {/* 1. EL GANCHO: EL PROBLEMA REAL */}
       <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {(() => {
@@ -58,7 +59,7 @@ const Home = () => {
               </h2>
             );
           })()}
-          
+
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
             {data.hookSubtitle}
           </p>
@@ -75,7 +76,7 @@ const Home = () => {
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1.5">{item.question}</h4>
                     <p className="text-sm text-gray-600 leading-relaxed">
-                      {item.answer.split(/(Machine Learning|E-VRP|OR-Tools|Q-Learning)/i).map((part: string, i: number) => 
+                      {item.answer.split(/(Machine Learning|E-VRP|OR-Tools|Q-Learning)/i).map((part: string, i: number) =>
                         /Machine Learning|E-VRP|OR-Tools|Q-Learning/i.test(part) ? (
                           <span key={i} className="font-semibold text-blue-700">{part}</span>
                         ) : (
@@ -97,17 +98,17 @@ const Home = () => {
         </div>
       </section>
 
-            {/* 2. LOS 7 PROBLEMAS REALES QUE RESOLVEMOS */}
+      {/* 2. LOS 7 PROBLEMAS REALES QUE RESOLVEMOS */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{data.sevenProblemsTitle}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">{data.sevenProblemsSubtitle}</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {(data.sevenProblems || []).map((item: any, idx: number) => {
-             
+
               const isLast = idx === (data.sevenProblems.length - 1);
 
               // Diseño especial para el último elemento (ocupa todo el ancho)
@@ -116,14 +117,14 @@ const Home = () => {
                   <div key={idx} className="md:col-span-2 lg:col-span-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl overflow-hidden shadow-lg flex flex-col md:flex-row">
                     {/* Imagen del 7mo problema con overlay */}
                     <div className="md:w-2/5 h-64 md:h-auto relative">
-                      <img 
-                        src={item.image} 
-                        alt={item.title} 
+                      <img
+                        src={item.image}
+                        alt={item.title}
                         className="absolute inset-0 w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-blue-900/40"></div>
                     </div>
-                    
+
                     {/* Contenido del 7mo problema */}
                     <div className="flex-1 p-8 md:p-12 flex flex-col justify-center text-white">
                       <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
@@ -143,18 +144,18 @@ const Home = () => {
                   {/* Contenedor de la imagen con efecto zoom */}
                   <div className="h-48 w-full overflow-hidden relative">
                     <div className={`absolute inset-0 bg-${item.color}-500/10 z-10`}></div> {/* Tinte de color sutil */}
-                    <img 
-                      src={item.image} 
-                      alt={item.title} 
+                    <img
+                      src={item.image}
+                      alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  
+
                   {/* Contenido de la tarjeta */}
                   <div className="p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
                     <p className="text-gray-600 text-sm mb-6 leading-relaxed">{item.desc}</p>
-                    
+
                     <div className={`pt-4 border-t border-gray-100 flex items-start gap-3`}>
                       <CheckCircle2 className={`w-5 h-5 text-${item.color}-600 flex-shrink-0 mt-0.5`} />
                       <div>
@@ -265,7 +266,7 @@ const Home = () => {
         </div>
       </section>
 
-            {/* ============ CASOS DE USO EN EL MUNDO REAL ============ */}
+      {/* ============ CASOS DE USO EN EL MUNDO REAL ============ */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -283,7 +284,7 @@ const Home = () => {
                 <div key={idx} className="group relative bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
                   {/* Decoración de fondo */}
                   <div className={`absolute top-0 right-0 w-32 h-32 bg-${useCase.color}-100 rounded-full blur-3xl opacity-40 -translate-y-1/2 translate-x-1/2 group-hover:opacity-60 transition-opacity`}></div>
-                  
+
                   <div className="relative z-10">
                     <div className="flex items-center gap-4 mb-6">
                       <div className={`w-14 h-14 bg-${useCase.color}-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
@@ -297,7 +298,7 @@ const Home = () => {
                         <span className="text-xs font-bold text-gray-500 uppercase tracking-wider mt-1 w-20 flex-shrink-0">{data.useCaseProblem}:</span>
                         <p className="text-gray-700 text-sm leading-relaxed">{useCase.scenario}</p>
                       </div>
-                      
+
                       <div className="flex gap-3">
                         <span className="text-xs font-bold text-gray-500 uppercase tracking-wider mt-1 w-20 flex-shrink-0">{data.useCaseSolution}:</span>
                         <p className="text-gray-700 text-sm leading-relaxed">{useCase.solution}</p>
@@ -324,7 +325,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-100 border border-blue-200 text-blue-700 text-sm font-semibold mb-6 shadow-sm">
-              <Cpu className="w-4 h-4" /> 
+              <Cpu className="w-4 h-4" />
               {data.aiBadge}
             </div>
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 tracking-tight">
@@ -339,7 +340,7 @@ const Home = () => {
             {(data.aiBranches || []).map((branch: any, idx: number) => {
               const Icon = iconMap[branch.icon] || Cpu;
               const colors = getColorClasses(branch.color);
-              
+
               return (
                 <div key={idx} className="group relative">
                   {/* Badge numérico */}
@@ -374,14 +375,14 @@ const Home = () => {
         </div>
       </section>
 
-            {/* 8. FLOTA ELÉCTRICA HETEROGÉNEA */}
+      {/* 8. FLOTA ELÉCTRICA HETEROGÉNEA */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">{data.fleetTitle}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">{data.fleetSubtitle}</p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {(data.vehicles || []).map((vehicle: any, idx: number) => {
               // URLs de respaldo de Unsplash
@@ -406,10 +407,10 @@ const Home = () => {
               // Lógica para las barras de progreso y la etiqueta de emisiones
               const rangeWidth = vehicle.name.includes('Rivian') ? '85%' : vehicle.name.includes('Transit') ? '95%' : '100%';
               const capacityWidth = vehicle.name.includes('Rivian') ? '100%' : vehicle.name.includes('Transit') ? '60%' : '20%';
-              
+
               let emissionLabel = labels.std;
               let emissionClass = 'bg-red-100 text-red-700';
-              
+
               if (vehicle.name.includes('Rivian')) {
                 emissionLabel = labels.zero;
                 emissionClass = 'bg-green-100 text-green-700';
@@ -422,10 +423,10 @@ const Home = () => {
                 <div key={idx} className="group relative bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                   {/* Contenedor de Imagen */}
                   <div className="relative h-56 overflow-hidden bg-gray-100">
-                    <img 
-                      src={imageUrl} 
-                      alt={vehicle.name} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                    <img
+                      src={imageUrl}
+                      alt={vehicle.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     {/* Badge de Tipo */}
                     <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-bold text-gray-800 shadow-sm border border-gray-200">
@@ -437,7 +438,7 @@ const Home = () => {
                   {/* Contenido de la Tarjeta */}
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">{vehicle.name}</h3>
-                    
+
                     <div className="space-y-5">
                       {/* Barra de Autonomía / Range */}
                       <div>
@@ -448,8 +449,8 @@ const Home = () => {
                           <span className="font-bold text-gray-900">{vehicle.range}</span>
                         </div>
                         <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
-                          <div 
-                            className={`h-full rounded-full transition-all duration-1000 ${getColorClasses(vehicle.color).bg.replace('/20', '')}`} 
+                          <div
+                            className={`h-full rounded-full transition-all duration-1000 ${getColorClasses(vehicle.color).bg.replace('/20', '')}`}
                             style={{ width: rangeWidth }}
                           ></div>
                         </div>
@@ -464,8 +465,8 @@ const Home = () => {
                           <span className="font-bold text-gray-900">{vehicle.capacity}</span>
                         </div>
                         <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
-                          <div 
-                            className={`h-full rounded-full transition-all duration-1000 ${getColorClasses(vehicle.color).bg.replace('/20', '')}`} 
+                          <div
+                            className={`h-full rounded-full transition-all duration-1000 ${getColorClasses(vehicle.color).bg.replace('/20', '')}`}
                             style={{ width: capacityWidth }}
                           ></div>
                         </div>
@@ -517,21 +518,50 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* 10. CTA FINAL */}
       <section className="py-24 bg-gradient-to-r from-blue-600 via-blue-700 to-cyan-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`, backgroundSize: '30px 30px' }}></div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">{data.ctaTitle}</h2>
           <p className="text-xl text-blue-100 mb-8">{data.ctaDescription}</p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <a href="https://github.com/victorcamacaro253/delivery-route-optimizer" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 rounded-xl font-semibold hover:scale-105 transition-all shadow-xl">
-              {data.ctaGithub}
+
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
+            {/* Botón GitHub */}
+            <a
+              href="https://github.com/victorcamacaro253/delivery-route-optimizer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 rounded-xl font-semibold hover:scale-105 transition-all shadow-xl"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+              </svg>
+              {data.ctaGithub || 'View on GitHub'}
             </a>
-            <Link to="/simulation" className="inline-flex items-center gap-2 px-8 py-4 bg-blue-800/20 backdrop-blur-sm border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-blue-800/30 transition-all">
-              {data.ctaSimulator} <ArrowRight className="w-4 h-4" />
+
+            {/* Botón Simulador */}
+            <Link
+              to="/simulation"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-blue-800/20 backdrop-blur-sm border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-blue-800/30 transition-all"
+            >
+              {data.ctaSimulator || 'Try Simulator'}
+              <ArrowRight className="w-4 h-4" />
             </Link>
+
+            {/* Botón de Contacto (NUEVO) */}
+            <a
+              href="mailto:victorcamacaro253@gmail.com"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-white/20 hover:scale-105 transition-all"
+            >
+              <Mail className="w-5 h-5" />
+              {data.ctaContact || 'Contact Me'}
+            </a>
           </div>
+
+          {/* Texto de confianza adicional */}
+          <p className="mt-8 text-sm text-blue-200 max-w-2xl mx-auto">
+            {data.ctaTrust || '¿Tienes preguntas sobre la arquitectura o quieres una demo personalizada? Escríbeme directamente y con gusto lo coordinamos.'}
+          </p>
         </div>
       </section>
     </div>

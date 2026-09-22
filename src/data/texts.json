@@ -41,6 +41,7 @@
       "heroDashStat3Label": "Entregas/h",
       "heroBadgePrime": "Prime Now",
       "heroBadgeAI": "5 Modelos IA",
+      "ctaContact": "Contáctame",
       "hookTitle": "¿Alguna vez has esperado un paquete que \"llega hoy\" pero nunca llega?",
       "hookSubtitle": "Detrás de cada entrega hay una orquesta logística compleja que debe resolver preguntas como:",
       "hookQuestions": [
@@ -983,6 +984,7 @@
       "heroDashStat3Label": "Deliveries/h",
       "heroBadgePrime": "Prime Now",
       "heroBadgeAI": "5 AI Models",
+      "ctaContact": "Contact me",
       "useCasesTitle": "Real-World Use Cases",
       "useCasesSubtitle": "How our system solves complex logistical challenges in real-time.",
       "useCaseProblem": "Problem",
