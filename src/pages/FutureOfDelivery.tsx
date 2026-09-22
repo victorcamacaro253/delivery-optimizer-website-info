@@ -20,17 +20,17 @@ const FutureOfDelivery = () => {
   const getIcon = (name: string) => iconMap[name] || Package;
 
   const getColorBg = (color: string) => {
-    const map: Record<string, string> = {
-      blue: 'bg-blue-100 text-blue-600',
-      cyan: 'bg-cyan-100 text-cyan-600',
-      orange: 'bg-orange-100 text-orange-600',
-      green: 'bg-green-100 text-green-600',
-      emerald: 'bg-emerald-100 text-emerald-600',
-      purple: 'bg-purple-100 text-purple-600',
-      red: 'bg-red-100 text-red-600'
-    };
-    return map[color] || map.blue;
+  const map: Record<string, { bg: string; text: string }> = {
+    blue: { bg: 'bg-blue-100', text: 'text-blue-600' },
+    cyan: { bg: 'bg-cyan-100', text: 'text-cyan-600' },
+    orange: { bg: 'bg-orange-100', text: 'text-orange-600' },
+    green: { bg: 'bg-green-100', text: 'text-green-600' },
+    emerald: { bg: 'bg-emerald-100', text: 'text-emerald-600' },
+    purple: { bg: 'bg-purple-100', text: 'text-purple-600' },
+    red: { bg: 'bg-red-100', text: 'text-red-600' }
   };
+  return map[color] || map.blue;
+};
 
   const getBorderHover = (color: string) => {
     const map: Record<string, string> = {
@@ -124,50 +124,56 @@ const FutureOfDelivery = () => {
           </div>
         </div>
       </section>
-
       {/* ============ 7 PROBLEMAS DETALLADOS ============ */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">{data.futureProblemsTitle}</h2>
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">{data.futureProblemsTitle}</h2>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             {(data.futureProblems || []).map((problem: any, idx: number) => {
               const Icon = getIcon(problem.icon);
               return (
-                <div key={idx} className={`group bg-white rounded-3xl p-8 md:p-10 border border-gray-200 ${getBorderHover(problem.color)} transition-all duration-300 hover:shadow-xl`}>
-                  <div className="flex items-start gap-6">
-                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 ${getColorBg(problem.color)} group-hover:scale-110 transition-transform`}>
-                      <Icon className="w-8 h-8" />
+                <div key={idx} className={`group bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-10 border border-gray-200 ${getBorderHover(problem.color)} transition-all duration-300 hover:shadow-xl`}>
+                  <div className="flex flex-col md:flex-row items-start gap-4 md:gap-6">
+                    {/* Icono - se reduce en móvil */}
+                    <div className={`w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0 ${getColorBg(problem.color)} group-hover:scale-110 transition-transform`}>
+                      <Icon className="w-6 h-6 md:w-8 md:h-8" />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-6">{problem.title}</h3>
+                    
+                    <div className="flex-1 min-w-0">
+                      {/* Título más pequeño en móvil */}
+                      <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">{problem.title}</h3>
                       
-                      <div className="space-y-6">
+                      <div className="space-y-4 md:space-y-6">
                         {/* Situación Actual */}
-                        <div className="flex gap-4">
-                          <div className="flex-shrink-0 w-24 text-xs font-bold text-red-600 uppercase tracking-wider pt-1">
+                        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                          <div className="flex-shrink-0 text-xs font-bold text-red-600 uppercase tracking-wider">
                             {data.problemSituation || 'Situación Actual'}
                           </div>
-                          <p className="text-gray-700 leading-relaxed flex-1">{problem.situation}</p>
+                          <p className="text-sm md:text-base text-gray-700 leading-relaxed flex-1">{problem.situation}</p>
                         </div>
 
-                        {/* Lo que hace nuestro sistema */}
-                        <div className="flex gap-4">
-                          <div className="flex-shrink-0 w-24 text-xs font-bold text-blue-600 uppercase tracking-wider pt-1">
-                             {data.problemSolution || 'Nuestra Solución'}
+                        {/* Nuestra Solución */}
+                        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                          <div className="flex-shrink-0 text-xs font-bold text-blue-600 uppercase tracking-wider">
+                            {data.problemSolution || 'Nuestra Solución'}
                           </div>
-                          <p className="text-gray-700 leading-relaxed flex-1">{problem.solution}</p>
+                          <p className="text-sm md:text-base text-gray-700 leading-relaxed flex-1">{problem.solution}</p>
                         </div>
 
                         {/* Beneficio */}
-                        <div className={`mt-6 p-5 bg-${problem.color}-50 rounded-xl border border-${problem.color}-100`}>
-                          <div className="flex items-start gap-3">
-                            <CheckCircle2 className={`w-5 h-5 text-${problem.color}-600 flex-shrink-0 mt-0.5`} />
-                            <div>
-                              <span className={`text-xs font-bold text-${problem.color}-700 uppercase tracking-wider`}>{data.problemBenefit || 'Beneficio'}:</span>
-                              <p className={`text-sm font-semibold text-${problem.color}-800 mt-1 leading-relaxed`}>{problem.benefit}</p>
+                        <div className={`mt-4 md:mt-6 p-4 md:p-5 rounded-xl border ${getColorBg(problem.color).bg.replace('100', '50')} border-${problem.color}-100`}>
+                          <div className="flex items-start gap-2 md:gap-3">
+                            <CheckCircle2 className={`w-4 h-4 md:w-5 md:h-5 flex-shrink-0 mt-0.5 ${getColorBg(problem.color).text}`} />
+                            <div className="flex-1 min-w-0">
+                              <span className={`text-xs font-bold uppercase tracking-wider ${getColorBg(problem.color).text}`}>
+                                {data.problemBenefit || 'Beneficio'}:
+                              </span>
+                              <p className={`text-sm font-semibold mt-1 leading-relaxed ${getColorBg(problem.color).text}`}>
+                                {problem.benefit}
+                              </p>
                             </div>
                           </div>
                         </div>
